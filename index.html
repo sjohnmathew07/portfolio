@@ -3,8 +3,8 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Sudharshan Reddy &mdash; Software Engineer &amp; Interactive Systems Builder</title>
-  <meta name="description" content="Portfolio of Sudharshan Reddy: Computer Science &amp; Engineering undergraduate at LPU. Exploring front-end dynamics, CSS 3D mathematics, physics simulations, and sensor-driven automation.">
+  <title>S. John Mathew &mdash; Software Engineer &amp; Systems Builder</title>
+  <meta name="description" content="Portfolio of S. John Mathew: Software Engineer, IoT Developer, and Algorithmic Problem Solver. Building thoughtful web platforms and embedded hardware systems.">
   
   <!-- Typography -->
   <link rel="preconnect" href="https://fonts.googleapis.com">
@@ -15,27 +15,27 @@
 </head>
 <body>
 
-  <!-- Subtle Monochrome Grid Overlay -->
+  <!-- Background Grid & Grain Layer -->
   <div class="bg-grid-overlay" aria-hidden="true"></div>
 
-  <!-- Header Navigation -->
+  <!-- Header / Navigation -->
   <header class="site-header" id="top">
     <div class="container nav-container">
-      <a href="#top" class="brand-link" aria-label="Sudharshan Reddy Home">
-        <span class="brand-mark">SR</span>
-        <span class="brand-name">Sudharshan Reddy</span>
+      <a href="#top" class="brand-link" aria-label="Home">
+        <span class="brand-mark">JM</span>
+        <span class="brand-name">S. John Mathew</span>
       </a>
 
       <div class="nav-status-pill desktop-only">
         <span class="status-indicator"></span>
-        <span class="status-text">Open for engineering opportunities</span>
+        <span class="status-text">Available for engineering roles</span>
       </div>
 
-      <nav class="nav-links" id="navLinks" aria-label="Primary Navigation">
+      <nav class="nav-links" id="navLinks" aria-label="Main Navigation">
         <a href="#about" class="nav-link">About</a>
-        <a href="#projects" class="nav-link">Projects</a>
+        <a href="#work" class="nav-link">Work</a>
         <a href="#capabilities" class="nav-link">Capabilities</a>
-        <a href="#journey" class="nav-link">Journey</a>
+        <a href="#milestones" class="nav-link">Milestones</a>
         <a href="#contact" class="nav-link btn-nav">Contact</a>
       </nav>
 
@@ -51,10 +51,10 @@
     <section class="hero-section" id="hero">
       <div class="container hero-container">
         <div class="hero-meta-row">
-          <span class="hero-tag">Computer Science &amp; Engineering &bull; LPU</span>
+          <span class="hero-tag">Computer Science &amp; Engineering</span>
           <div class="hero-location">
             <svg class="icon-svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><circle cx="12" cy="12" r="10"></circle><polygon points="16.24 7.76 14.12 14.12 7.76 16.24 9.88 9.88 16.24 7.76"></polygon></svg>
-            <span>Phagwara, Punjab / Nellore, AP</span>
+            <span>Punjab / Andhra Pradesh, India</span>
           </div>
           <div class="hero-time" id="localTimeDisplay">
             <span class="time-label">Local Time:</span>
@@ -62,72 +62,53 @@
           </div>
         </div>
 
-        <div class="hero-content-split">
-          <div class="hero-text-block">
-            <h1 class="hero-title">
-              Crafting fluid web dynamics, 3D mathematical interfaces, and sensor-driven automation.
-            </h1>
+        <div class="hero-intro-row">
+          <span class="intro-greeting">Hi, I'm</span>
+          <span class="intro-name">John Mathew</span>
+        </div>
 
-            <p class="hero-lead">
-              I am a Computer Science &amp; Engineering undergraduate at Lovely Professional University. My work bridges client-side mathematics &mdash; such as browser physics engines, custom DOM collision loops, and CSS 3D coordinate spaces &mdash; with physical hardware computing like multi-sensor automation systems.
-            </p>
+        <h1 class="hero-title">
+          Engineering reliable software systems from bare silicon to modern web architectures.
+        </h1>
 
-            <div class="hero-cta-group">
-              <a href="#projects" class="btn btn-primary">
-                <span>View Engineering Work</span>
-                <svg class="btn-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><line x1="7" y1="17" x2="17" y2="7"></line><polyline points="7 7 17 7 17 17"></polyline></svg>
-              </a>
-              <a href="#contact" class="btn btn-secondary">
-                <span>Initiate Conversation</span>
-              </a>
-              <button class="btn btn-tertiary" id="copyEmailQuickBtn" data-email="rsudharshan354@gmail.com" title="Copy email address">
-                <svg class="btn-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><rect x="9" y="9" width="13" height="13" rx="2" ry="2"></rect><path d="M5 15H4a2 2 0 0 1-2-2V4a2 2 0 0 1 2-2h9a2 2 0 0 1 2 2v1"></path></svg>
-                <span class="copy-text">rsudharshan354@gmail.com</span>
-              </button>
-            </div>
-          </div>
+        <p class="hero-lead">
+          I am S. John Mathew &mdash; a Computer Science Engineer from Lovely Professional University. I bridge the gap between low-level hardware communication and resilient full-stack web architectures &mdash; whether orchestrating microcontrollers (Arduino / ESP32) to actuate electrical circuits or engineering white-label enterprise analytics platforms.
+        </p>
 
-          <!-- Interactive 3D Cube Preview Widget -->
-          <div class="hero-interactive-card">
-            <div class="cube-widget-header">
-              <span class="widget-label">Interactive 3D Matrix</span>
-              <span class="widget-sub">Drag or click to spin</span>
-            </div>
-            <div class="cube-scene-container" id="cubeScene">
-              <div class="cube-3d" id="interactiveCube">
-                <div class="cube-face cube-front"><span>SR</span></div>
-                <div class="cube-face cube-back"><span>CSS 3D</span></div>
-                <div class="cube-face cube-right"><span>JS DOM</span></div>
-                <div class="cube-face cube-left"><span>PYTHON</span></div>
-                <div class="cube-face cube-top"><span>SENSORS</span></div>
-                <div class="cube-face cube-bottom"><span>LOGIC</span></div>
-              </div>
-            </div>
-            <div class="cube-controls">
-              <button class="cube-spin-btn" id="cubeRotateX">Rotate X</button>
-              <button class="cube-spin-btn" id="cubeRotateY">Rotate Y</button>
-              <button class="cube-spin-btn" id="cubeReset">Reset Axis</button>
-            </div>
-          </div>
+        <div class="hero-cta-group">
+          <a href="#work" class="btn btn-primary">
+            <span>Explore Featured Work</span>
+            <svg class="btn-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><line x1="7" y1="17" x2="17" y2="7"></line><polyline points="7 7 17 7 17 17"></polyline></svg>
+          </a>
+          <a href="#contact" class="btn btn-secondary">
+            <span>Initiate Conversation</span>
+          </a>
+          <button class="btn btn-tertiary" id="copyEmailQuickBtn" data-email="sjohnmathew07@gmail.com" title="Copy email address">
+            <svg class="btn-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><rect x="9" y="9" width="13" height="13" rx="2" ry="2"></rect><path d="M5 15H4a2 2 0 0 1-2-2V4a2 2 0 0 1 2-2h9a2 2 0 0 1 2 2v1"></path></svg>
+            <span class="copy-text">sjohnmathew07@gmail.com</span>
+          </button>
         </div>
 
         <!-- Metric Ticker Strip -->
         <div class="hero-stats-strip">
           <div class="stat-box">
-            <div class="stat-number">97%</div>
-            <div class="stat-label">Higher Secondary Distinction / Narayana</div>
+            <div class="stat-number">200+</div>
+            <div class="stat-label">Algorithmic Problems Solved</div>
           </div>
+          <div class="stat-divider"></div>
           <div class="stat-box">
-            <div class="stat-number">150+ Hrs</div>
-            <div class="stat-label">Intensive Programming Curriculum Completed</div>
+            <div class="stat-number">100 Days</div>
+            <div class="stat-label">Consecutive LeetCode Problem Streak</div>
           </div>
+          <div class="stat-divider"></div>
           <div class="stat-box">
-            <div class="stat-number">7.50</div>
-            <div class="stat-label">B.Tech CGPA / Lovely Professional University</div>
+            <div class="stat-number">Top 10</div>
+            <div class="stat-label">Hackathon Finalist / 50+ Teams</div>
           </div>
+          <div class="stat-divider"></div>
           <div class="stat-box">
-            <div class="stat-number">3+ Systems</div>
-            <div class="stat-label">Games, 3D Visualizers &amp; IoT Automation Built</div>
+            <div class="stat-number">7.5</div>
+            <div class="stat-label">B.Tech CGPA / Lovely Professional Univ.</div>
           </div>
         </div>
       </div>
@@ -138,93 +119,88 @@
       <div class="container">
         <div class="section-header">
           <span class="section-sub">Personal Perspective</span>
-          <h2 class="section-title">The Engineering Narrative</h2>
+          <h2 class="section-title">The Engineering Philosophy</h2>
         </div>
 
         <div class="about-grid">
           <div class="about-text-column">
             <p class="paragraph-highlight">
-              "To build software well, one must appreciate both the mathematical elegance of the browser coordinate plane and the grounded reality of electrical currents."
+              "Great software is not merely lines of code; it is the thoughtful translation of a real human need into a dependable, deterministic system."
             </p>
             <p>
-              I began my computing journey with a drive to understand how lines of logic create responsive, tactile feedback for humans. Rather than building static, passive pages, I found myself drawn to visual interaction mechanics &mdash; calculating trajectories for arrow vectors in JavaScript, animating 3D coordinate geometry purely through CSS transforms, and structuring responsive layouts that react seamlessly to user inputs.
+              My journey in computing started with a curiosity about how abstract logic controls tangible reality. That curiosity led me to explore both ends of the engineering spectrum: writing deterministic low-level routines in C and C++ to interact directly with hardware registers and microcontrollers, as well as building responsive, user-facing web tools in JavaScript, Python, and modern web frameworks.
             </p>
             <p>
-              Simultaneously, through my Basic Electrical and Electronics Engineering coursework, I stepped into the physical realm. Crafting an end-to-end multi-sensor Home Automation prototype taught me how hardware signals &mdash; such as photon resistance in LDRs, conductive bridging in rain sensors, and infrared flame spikes &mdash; become deterministic input data for automated safety relays.
+              I believe in disciplined consistency. Solving over 200 algorithmic challenges and maintaining a 100-day consecutive problem-solving streak on LeetCode was not just about passing test cases &mdash; it was a deliberate practice in breaking complex, ambiguous requirements down into optimal time and space complexities.
             </p>
             <p>
-              My academic background reflects focused discipline: achieving a <strong>97% aggregate</strong> in Higher Secondary Education at Narayana Junior College, completing an intensive <strong>150-hour programming curriculum</strong>, practicing data structure challenges on LeetCode, and giving back through community <strong>Python tutoring</strong> at Lovely Professional University.
+              Beyond solo engineering, I have actively mentored aspiring developers through an NGO tutoring initiative and collaborated under high pressure in collegiate hackathons, ranking among the top 10 out of over 50 competing squads.
             </p>
 
             <div class="about-key-tenets">
               <div class="tenet-card">
                 <span class="tenet-number">01</span>
-                <h3 class="tenet-title">Mathematical Interaction Design</h3>
-                <p class="tenet-desc">Approaching user interfaces with spatial mathematics: 3D perspective transforms, trigonometric projection, and frame-rate-conscious DOM loops.</p>
+                <h3 class="tenet-title">Hardware-Software Synergy</h3>
+                <p class="tenet-desc">Understanding signals, microcontrollers, and electrical boundaries gives me a grounded sense of computing limits and memory efficiency.</p>
               </div>
               <div class="tenet-card">
                 <span class="tenet-number">02</span>
-                <h3 class="tenet-title">Hardware-to-Software Grounding</h3>
-                <p class="tenet-desc">Direct experience with electronic sensors, circuit loops, and relay switches informs my understanding of system boundaries and event-driven signals.</p>
+                <h3 class="tenet-title">Algorithmic Rigor</h3>
+                <p class="tenet-desc">Applying structured data structures and algorithmic thinking to ensure every architecture scales predictably under real workloads.</p>
               </div>
               <div class="tenet-card">
                 <span class="tenet-number">03</span>
-                <h3 class="tenet-title">Curiosity &amp; Mentorship</h3>
-                <p class="tenet-desc">Reinforcing fundamentals by teaching Python to peers, participating in technical team sprints, and pursuing continuous independent learning.</p>
+                <h3 class="tenet-title">Human-Centered Utility</h3>
+                <p class="tenet-desc">Building software that respects user workflows, whether it is an intuitive automation dashboard or clear technical documentation.</p>
               </div>
             </div>
           </div>
 
-          <!-- Profile Sidebar -->
           <aside class="about-sidebar">
             <div class="profile-card">
               <div class="profile-card-header">
                 <div class="profile-avatar-placeholder">
-                  <span class="avatar-initials">SR</span>
+                  <span class="avatar-initials">SJM</span>
                 </div>
                 <div>
-                  <h3 class="profile-name">Sudharshan Reddy</h3>
-                  <p class="profile-title">Computer Science Engineer</p>
+                  <h3 class="profile-name">S. John Mathew</h3>
+                  <p class="profile-title">Software Engineer</p>
                 </div>
               </div>
 
               <div class="profile-meta-list">
                 <div class="meta-item">
-                  <span class="meta-label">Degree &amp; Branch</span>
-                  <span class="meta-value">B.Tech &mdash; Computer Science &amp; Engineering</span>
+                  <span class="meta-label">Degree</span>
+                  <span class="meta-value">B.Tech &mdash; Computer Science</span>
                 </div>
                 <div class="meta-item">
-                  <span class="meta-label">University</span>
-                  <span class="meta-value">Lovely Professional University (Phagwara, Punjab)</span>
+                  <span class="meta-label">Institution</span>
+                  <span class="meta-value">Lovely Professional University</span>
                 </div>
                 <div class="meta-item">
                   <span class="meta-label">Primary Languages</span>
-                  <span class="meta-value">Python, JavaScript, C, C++</span>
+                  <span class="meta-value">Python, C, C++, JavaScript</span>
                 </div>
                 <div class="meta-item">
-                  <span class="meta-label">Frontend Focus</span>
-                  <span class="meta-value">HTML5, CSS3, 3D Transforms, DOM Physics</span>
+                  <span class="meta-label">Specializations</span>
+                  <span class="meta-value">Full-Stack Web, Embedded Systems, IoT</span>
                 </div>
                 <div class="meta-item">
-                  <span class="meta-label">Tools &amp; DBs</span>
-                  <span class="meta-value">MySQL, DBMS, Figma, VS Code, Git/GitHub</span>
-                </div>
-                <div class="meta-item">
-                  <span class="meta-label">Community Impact</span>
-                  <span class="meta-value">Community Python Tutoring &bull; LPU</span>
+                  <span class="meta-label">Code Platforms</span>
+                  <span class="meta-value">LeetCode 100-Day Badge (200+ Solved)</span>
                 </div>
               </div>
 
               <div class="profile-connect">
-                <a href="https://github.com/rsudharshan354-art" target="_blank" rel="noopener noreferrer" class="profile-link">
-                  <span>GitHub (@rsudharshan354-art)</span>
+                <a href="https://github.com/sjohnmathew07" target="_blank" rel="noopener noreferrer" class="profile-link">
+                  <span>GitHub</span>
                   <svg class="mini-arrow" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><line x1="7" y1="17" x2="17" y2="7"></line><polyline points="7 7 17 7 17 17"></polyline></svg>
                 </a>
-                <a href="https://www.linkedin.com/in/veeramreddy-sudharshanreddy-32b727395" target="_blank" rel="noopener noreferrer" class="profile-link">
-                  <span>LinkedIn Profile</span>
+                <a href="https://www.linkedin.com/in/john-mathew-sudha-0a6616379/" target="_blank" rel="noopener noreferrer" class="profile-link">
+                  <span>LinkedIn</span>
                   <svg class="mini-arrow" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><line x1="7" y1="17" x2="17" y2="7"></line><polyline points="7 7 17 7 17 17"></polyline></svg>
                 </a>
-                <a href="mailto:rsudharshan354@gmail.com" class="profile-link">
+                <a href="mailto:sjohnmathew07@gmail.com" class="profile-link">
                   <span>Email Direct</span>
                   <svg class="mini-arrow" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><line x1="7" y1="17" x2="17" y2="7"></line><polyline points="7 7 17 7 17 17"></polyline></svg>
                 </a>
@@ -235,8 +211,8 @@
       </div>
     </section>
 
-    <!-- Selected Projects & Case Studies -->
-    <section class="section work-section" id="projects">
+    <!-- Selected Engineering Work -->
+    <section class="section work-section" id="work">
       <div class="container">
         <div class="section-header-flex">
           <div>
@@ -244,259 +220,179 @@
             <h2 class="section-title">Selected Engineering Work</h2>
           </div>
           
-          <!-- Filter Tabs -->
-          <div class="filter-controls" role="tablist" aria-label="Project category filter">
+          <!-- Category Filter Controls -->
+          <div class="filter-controls" role="tablist" aria-label="Project filter">
             <button class="filter-btn active" data-filter="all" role="tab" aria-selected="true">All Initiatives</button>
-            <button class="filter-btn" data-filter="interactive" role="tab" aria-selected="false">Interactive Web &amp; 3D</button>
-            <button class="filter-btn" data-filter="automation" role="tab" aria-selected="false">Hardware &amp; IoT Automation</button>
+            <button class="filter-btn" data-filter="embedded" role="tab" aria-selected="false">Embedded &amp; IoT</button>
+            <button class="filter-btn" data-filter="web" role="tab" aria-selected="false">Web &amp; Enterprise</button>
           </div>
         </div>
 
         <div class="projects-list">
           
-          <!-- Project 1: Archery Game -->
-          <article class="project-card" data-category="interactive">
+          <!-- Case Study 1: Smart Switch Board -->
+          <article class="project-card" data-category="embedded">
             <div class="project-header">
-              <div class="project-index">Case Study 01 &bull; Physics &amp; Game Mechanics</div>
-              <span class="project-badge">Browser Game Engine</span>
+              <div class="project-index">Case Study 01 / Embedded Systems &amp; IoT</div>
+              <span class="project-badge">Hardware &amp; Web Bridge</span>
             </div>
 
-            <h3 class="project-title">Interactive Archery Game &mdash; Browser-Based Physics Simulation</h3>
+            <h3 class="project-title">Smart Switch Board &mdash; Intelligent Electrical Automation System</h3>
 
             <p class="project-summary">
-              A high-precision browser archery game built without heavy external canvas libraries, utilizing clean JavaScript event handling, real-time projectile physics, and responsive DOM manipulation to deliver engaging interactive gameplay.
+              An electronic switching ecosystem that liberates physical household infrastructure from static wall switches, allowing lights, cooling systems, and electrical appliances to be actuated automatically or remotely with low-latency bidirectional wireless communication.
             </p>
 
             <div class="project-grid-columns">
               <div class="project-narrative-col">
                 <h4 class="col-heading">The Architectural Challenge</h4>
                 <p>
-                  Creating responsive, tactile games in the DOM requires managing smooth arrow velocity vectors, tracking multi-axis user aiming, rendering dynamic moving targets, and calculating frame-by-frame hit-box intersections while keeping CPU consumption low across desktop and mobile browsers.
+                  Conventional residential switches offer zero remote telemetry, scheduled automation, or assistive control. The objective was to design a fault-tolerant switching system where physical switches, mobile app signals, and sensor triggers work harmoniously without race conditions or electrical safety compromises.
                 </p>
                 <h4 class="col-heading">The Engineering Solution</h4>
                 <p>
-                  Engineered an event-driven aiming loop that maps pointer input to an angle and impulse power vector. Programmed dynamic target oscillation routines with pseudo-random speed offsets. When the arrow is released, an animation loop computes projectile coordinates, executes real-time collision boundaries, increments progressive scoring streaks, and triggers visual feedback without DOM layout thrashing.
+                  I programmed Arduino and ESP32 microcontrollers to listen for wireless signals over Wi-Fi and Bluetooth, as well as polling local sensor states. The microcontroller processes incoming commands and drives multichannel relay modules, electrically isolating digital logic from high-voltage household circuits. In parallel, I architected a web dashboard and mobile interface enabling users to toggle appliances, inspect live state logs, and trigger timed routines.
                 </p>
               </div>
 
               <div class="project-specs-col">
                 <div class="specs-block">
-                  <span class="specs-label">Timeline</span>
-                  <span class="specs-data">June 2025 &ndash; July 2025</span>
+                  <span class="specs-label">Core Microcontroller</span>
+                  <span class="specs-data">Arduino, ESP32, Relay Array Modules</span>
                 </div>
                 <div class="specs-block">
-                  <span class="specs-label">Core Mechanics</span>
-                  <span class="specs-data">Dynamic Aim Vectoring, Moving Targets, Hit Detection</span>
+                  <span class="specs-label">Frontend &amp; App</span>
+                  <span class="specs-data">HTML, CSS, JavaScript, Bootstrap, MIT App Inventor</span>
                 </div>
                 <div class="specs-block">
-                  <span class="specs-label">Frontend Technologies</span>
-                  <span class="specs-data">Vanilla JavaScript, HTML5, CSS Animations</span>
+                  <span class="specs-label">Backend &amp; Data Store</span>
+                  <span class="specs-data">PHP, MySQL, HTTP API / REST Endpoints</span>
                 </div>
                 <div class="specs-block">
-                  <span class="specs-label">Code Repository</span>
-                  <span class="specs-data">Available on GitHub (@rsudharshan354-art)</span>
+                  <span class="specs-label">Key Capabilities</span>
+                  <span class="specs-data">Galvanic Relay Isolation, Multi-client Sync, Hardware Manual Override</span>
                 </div>
               </div>
             </div>
 
-            <!-- Signal & Pipeline Box -->
+            <!-- Architecture Diagram Box -->
             <div class="architecture-box">
-              <div class="arch-title">Game Loop &amp; Collision Architecture</div>
+              <div class="arch-title">Signal Flow &amp; System Hierarchy</div>
               <div class="arch-flow">
                 <div class="arch-node">
-                  <span class="arch-type">Input Capture</span>
-                  <span class="arch-val">Mouse / Touch Aim &amp; Draw Tension</span>
+                  <span class="arch-type">Input Vectors</span>
+                  <span class="arch-val">Mobile App / Web UI / Tactile Switches</span>
                 </div>
                 <div class="arch-arrow">&rarr;</div>
                 <div class="arch-node">
-                  <span class="arch-type">Physics Loop</span>
-                  <span class="arch-val">Velocity Vector Calculation &amp; Trajectory</span>
+                  <span class="arch-type">Controller Processing</span>
+                  <span class="arch-val">ESP32 / Arduino Microcontroller</span>
                 </div>
                 <div class="arch-arrow">&rarr;</div>
                 <div class="arch-node">
-                  <span class="arch-type">Collision Math</span>
-                  <span class="arch-val">Radial Boundary Intersection Detection</span>
+                  <span class="arch-type">Isolation Layer</span>
+                  <span class="arch-val">Optocoupled Relay Modules</span>
                 </div>
                 <div class="arch-arrow">&rarr;</div>
                 <div class="arch-node">
-                  <span class="arch-type">DOM State Update</span>
-                  <span class="arch-val">Score Multiplier &amp; CSS Hit Animation</span>
+                  <span class="arch-type">Load Execution</span>
+                  <span class="arch-val">High-Voltage Electrical Appliances</span>
                 </div>
               </div>
             </div>
 
             <div class="project-tags">
-              <span class="tag">JavaScript (ES6+)</span>
-              <span class="tag">DOM Manipulation</span>
-              <span class="tag">Physics Vectoring</span>
-              <span class="tag">Collision Detection</span>
-              <span class="tag">CSS Animations</span>
-              <span class="tag">Responsive UI</span>
-              <span class="tag">Event Handling</span>
-            </div>
-          </article>
-
-          <!-- Project 2: 3D Cube Twist -->
-          <article class="project-card" data-category="interactive">
-            <div class="project-header">
-              <div class="project-index">Case Study 02 &bull; 3D CSS Coordinate Geometry</div>
-              <span class="project-badge">Spatial UI &amp; Transformations</span>
-            </div>
-
-            <h3 class="project-title">3D Cube Twist &mdash; Interactive Multi-Axis CSS Spatial Engine</h3>
-
-            <p class="project-summary">
-              An interactive 3D Cube visualization crafted using pure CSS 3D transformations and JavaScript event orchestration, creating realistic geometric depth, facet lighting, and smooth rotational momentum directly within the browser viewport.
-            </p>
-
-            <div class="project-grid-columns">
-              <div class="project-narrative-col">
-                <h4 class="col-heading">The Architectural Challenge</h4>
-                <p>
-                  Most 3D web visualizations rely on heavy WebGL libraries like Three.js. The goal here was to push the native capabilities of modern CSS 3D coordinate geometry to its absolute limits &mdash; maintaining 60fps rotational stability, realistic orthogonal face orientation, and responsive touch gestures using pure CSS and lightweight vanilla JavaScript.
-                </p>
-                <h4 class="col-heading">The Engineering Solution</h4>
-                <p>
-                  Structured an orthogonal six-faced cube using <span class="mono-inline">transform-style: preserve-3d</span>, calculated perspective depths via <span class="mono-inline">translateZ</span> offsets, and bound interactive drag and button listeners to update <span class="mono-inline">rotateX</span> and <span class="mono-inline">rotateY</span> angles. Implemented momentum smoothing and face-shading rules to produce an organic, physical feel for users interacting with each facet.
-                </p>
-              </div>
-
-              <div class="project-specs-col">
-                <div class="specs-block">
-                  <span class="specs-label">Timeline</span>
-                  <span class="specs-data">August 2025 &ndash; September 2025</span>
-                </div>
-                <div class="specs-block">
-                  <span class="specs-label">3D Mechanics</span>
-                  <span class="specs-data">preserve-3d, Matrix Rotations, Perspective Z-Offset</span>
-                </div>
-                <div class="specs-block">
-                  <span class="specs-label">Interaction Models</span>
-                  <span class="specs-data">Pointer Coordinates, Keyboard Binding, Touch Gestures</span>
-                </div>
-                <div class="specs-block">
-                  <span class="specs-label">Performance</span>
-                  <span class="specs-data">Zero Dependency &bull; Hardware GPU Accelerated</span>
-                </div>
-              </div>
-            </div>
-
-            <!-- Architecture Flow Box -->
-            <div class="architecture-box">
-              <div class="arch-title">Spatial Coordinate Processing Pipeline</div>
-              <div class="arch-flow">
-                <div class="arch-node">
-                  <span class="arch-type">Spatial Parent</span>
-                  <span class="arch-val">Perspective Viewport (1000px Depth)</span>
-                </div>
-                <div class="arch-arrow">&rarr;</div>
-                <div class="arch-node">
-                  <span class="arch-type">Angular Matrix</span>
-                  <span class="arch-val">Dynamic rotateX / rotateY State Management</span>
-                </div>
-                <div class="arch-arrow">&rarr;</div>
-                <div class="arch-node">
-                  <span class="arch-type">Facet Offsets</span>
-                  <span class="arch-val">Orthogonal translateZ Boundary Anchors</span>
-                </div>
-                <div class="arch-arrow">&rarr;</div>
-                <div class="arch-node">
-                  <span class="arch-type">GPU Rendering</span>
-                  <span class="arch-val">Hardware-Accelerated 60fps Rasterization</span>
-                </div>
-              </div>
-            </div>
-
-            <div class="project-tags">
-              <span class="tag">CSS 3D Transforms</span>
-              <span class="tag">Preserve-3D</span>
-              <span class="tag">Vanilla JavaScript</span>
-              <span class="tag">Spatial Geometry</span>
-              <span class="tag">Gesture Controls</span>
-              <span class="tag">Interactive UI</span>
-              <span class="tag">DOM Architecture</span>
-            </div>
-          </article>
-
-          <!-- Project 3: Smart Home Automation -->
-          <article class="project-card" data-category="automation">
-            <div class="project-header">
-              <div class="project-index">Case Study 03 &bull; Basic Electrical &amp; Electronics Engineering</div>
-              <span class="project-badge">Hardware &amp; Multi-Sensor Automation</span>
-            </div>
-
-            <h3 class="project-title">Smart Home Automation System &mdash; Multi-Sensor Environmental Safety Circuit</h3>
-
-            <p class="project-summary">
-              A physical hardware-integrated smart automation prototype integrating real-time fire detection, conductive rain moisture sensing, and an LDR-driven automatic street-lighting system to deliver proactive environmental safety and autonomous circuit control.
-            </p>
-
-            <div class="project-grid-columns">
-              <div class="project-narrative-col">
-                <h4 class="col-heading">The Architectural Challenge</h4>
-                <p>
-                  Residential automation setups often treat safety alarms and energy management as separate, costly silos. The engineering objective was to design a unified electrical prototype that concurrently monitors multiple analog and digital sensory signals &mdash; optical fire wavelengths, conductive precipitation, and ambient illumination &mdash; and reliably triggers autonomous relay interventions.
-                </p>
-                <h4 class="col-heading">The Engineering Solution</h4>
-                <p>
-                  As part of the BEEE course curriculum, I engineered a circuit prototype combining optical flame sensors, a conductive rain grid, and Light Dependent Resistors (LDR). Designed voltage-divider networks to calibrate analog thresholds. When ambient light diminishes, the circuit autonomously illuminates lighting loads. When precipitation is detected, protective shutters or alert indicators fire. When thermal or flame signatures cross safety limits, an emergency alert cycle engages to decouple vulnerable loads.
-                </p>
-              </div>
-
-              <div class="project-specs-col">
-                <div class="specs-block">
-                  <span class="specs-label">Timeline</span>
-                  <span class="specs-data">January 2026 &ndash; February 2026</span>
-                </div>
-                <div class="specs-block">
-                  <span class="specs-label">Sensor Array</span>
-                  <span class="specs-data">Optical Flame Sensor, Rain Grid, Photoresistor (LDR)</span>
-                </div>
-                <div class="specs-block">
-                  <span class="specs-label">Actuation Logic</span>
-                  <span class="specs-data">Relay Arrays, Automated Safety Triggers, Light Control</span>
-                </div>
-                <div class="specs-block">
-                  <span class="specs-label">Academic Context</span>
-                  <span class="specs-data">BEEE Course Project &bull; Lovely Professional University</span>
-                </div>
-              </div>
-            </div>
-
-            <!-- Signal Flow -->
-            <div class="architecture-box">
-              <div class="arch-title">Multi-Sensor Telemetry &amp; Actuation Topology</div>
-              <div class="arch-flow">
-                <div class="arch-node">
-                  <span class="arch-type">Environmental Sensors</span>
-                  <span class="arch-val">LDR Lux &bull; Rain Moisture &bull; Flame IR</span>
-                </div>
-                <div class="arch-arrow">&rarr;</div>
-                <div class="arch-node">
-                  <span class="arch-type">Signal Processing</span>
-                  <span class="arch-val">Voltage Dividers &amp; Threshold Comparator</span>
-                </div>
-                <div class="arch-arrow">&rarr;</div>
-                <div class="arch-node">
-                  <span class="arch-type">Relay Isolation</span>
-                  <span class="arch-val">Electromechanical Switching Array</span>
-                </div>
-                <div class="arch-arrow">&rarr;</div>
-                <div class="arch-node">
-                  <span class="arch-type">Autonomous Action</span>
-                  <span class="arch-val">Street Lighting &bull; Rain Alert &bull; Fire Cutoff</span>
-                </div>
-              </div>
-            </div>
-
-            <div class="project-tags">
-              <span class="tag">Sensor Fusion</span>
-              <span class="tag">Light Dependent Resistor (LDR)</span>
-              <span class="tag">Rain Detection</span>
-              <span class="tag">Fire Safety Alerts</span>
+              <span class="tag">Arduino</span>
+              <span class="tag">ESP32</span>
+              <span class="tag">C / C++</span>
               <span class="tag">Relay Modules</span>
-              <span class="tag">Circuit Analysis</span>
-              <span class="tag">Hardware Automation</span>
+              <span class="tag">JavaScript</span>
+              <span class="tag">PHP</span>
+              <span class="tag">MySQL</span>
+              <span class="tag">Bootstrap</span>
+              <span class="tag">IoT Protocols</span>
+            </div>
+          </article>
+
+          <!-- Case Study 2: Optmyzr Shareable Dashboards -->
+          <article class="project-card" data-category="web">
+            <div class="project-header">
+              <div class="project-index">Case Study 02 / Web Platforms &amp; Infrastructure</div>
+              <span class="project-badge">Enterprise Dashboard Architecture</span>
+            </div>
+
+            <h3 class="project-title">Optmyzr &mdash; Shareable Live Dashboards &amp; Custom White-Label Platform</h3>
+
+            <p class="project-summary">
+              A secure client-facing analytics portal enabling digital marketing teams and enterprise agencies to provide external clients with real-time, tamper-proof reporting dashboards under fully personalized corporate branding and custom white-labeled domains.
+            </p>
+
+            <div class="project-grid-columns">
+              <div class="project-narrative-col">
+                <h4 class="col-heading">The Architectural Challenge</h4>
+                <p>
+                  High-growth agencies need to share comprehensive campaign performance reports without granting clients administrative access to core operational platforms. Furthermore, agencies require custom branding and custom domains (e.g., <span class="mono-inline">reports.agencyname.com</span>) to maintain client trust and enterprise brand cohesion.
+                </p>
+                <h4 class="col-heading">The Engineering Solution</h4>
+                <p>
+                  Engineered shareable dashboard URLs configured with granular viewing scopes and dynamic client branding injection. Implemented the custom domain routing architecture utilizing DNS CNAME records and automated SSL certificate validation, guaranteeing secure transport over HTTPS. Seamlessly integrated analytical layers across Tableau and SAP data stores to ensure live, synchronized query execution.
+                </p>
+              </div>
+
+              <div class="project-specs-col">
+                <div class="specs-block">
+                  <span class="specs-label">Infrastructure &amp; Networking</span>
+                  <span class="specs-data">DNS Orchestration, CNAME Resolution, SSL / TLS</span>
+                </div>
+                <div class="specs-block">
+                  <span class="specs-label">Analytics Integration</span>
+                  <span class="specs-data">Tableau Dashboards, SAP Enterprise Systems</span>
+                </div>
+                <div class="specs-block">
+                  <span class="specs-label">Security Model</span>
+                  <span class="specs-data">Token-based Shareable URLs, Role-bounded Scopes</span>
+                </div>
+                <div class="specs-block">
+                  <span class="specs-label">White-Labeling Features</span>
+                  <span class="specs-data">Custom Domain Mapping, Dynamic Asset Injection</span>
+                </div>
+              </div>
+            </div>
+
+            <!-- Architecture Diagram Box -->
+            <div class="architecture-box">
+              <div class="arch-title">Custom Domain Resolution &amp; White-Labeling Flow</div>
+              <div class="arch-flow">
+                <div class="arch-node">
+                  <span class="arch-type">Agency Setup</span>
+                  <span class="arch-val">Custom Domain + Brand Logo Asset</span>
+                </div>
+                <div class="arch-arrow">&rarr;</div>
+                <div class="arch-node">
+                  <span class="arch-type">Routing Layer</span>
+                  <span class="arch-val">CNAME Record Pointing &amp; DNS Check</span>
+                </div>
+                <div class="arch-arrow">&rarr;</div>
+                <div class="arch-node">
+                  <span class="arch-type">Handshake</span>
+                  <span class="arch-val">Automated SSL / TLS Provisioning</span>
+                </div>
+                <div class="arch-arrow">&rarr;</div>
+                <div class="arch-node">
+                  <span class="arch-type">Reporting Core</span>
+                  <span class="arch-val">Live Tableau &amp; SAP Feed Delivery</span>
+                </div>
+              </div>
+            </div>
+
+            <div class="project-tags">
+              <span class="tag">Tableau</span>
+              <span class="tag">SAP</span>
+              <span class="tag">DNS Management</span>
+              <span class="tag">CNAME Routing</span>
+              <span class="tag">SSL / TLS Certificates</span>
+              <span class="tag">Enterprise White-Label</span>
+              <span class="tag">Data Analytics</span>
             </div>
           </article>
 
@@ -504,7 +400,7 @@
       </div>
     </section>
 
-    <!-- Capabilities & Technical Toolkit -->
+    <!-- Technical Capabilities & Craft -->
     <section class="section capabilities-section" id="capabilities">
       <div class="container">
         <div class="section-header">
@@ -516,139 +412,139 @@
           <!-- Column 1: Programming Languages -->
           <div class="skill-category-card">
             <div class="category-header">
-              <span class="category-code">DEV_01</span>
+              <span class="category-code">LANG_01</span>
               <h3 class="category-name">Programming Languages</h3>
             </div>
-            <p class="category-summary">Primary languages applied to algorithmic reasoning, data structures, and application software.</p>
+            <p class="category-summary">Primary tools used for computational logic, algorithmic reasoning, and backend routines.</p>
             <ul class="skill-items-list">
               <li class="skill-row">
                 <div class="skill-meta">
                   <span class="skill-title">Python</span>
-                  <span class="skill-level">Certified Fundamental</span>
+                  <span class="skill-level">Fluent</span>
                 </div>
-                <p class="skill-desc">Object-oriented programming, data structures, automated scripts, and community tutoring curriculum.</p>
+                <p class="skill-desc">Object-oriented programming, data handling, scripting, automated workflows, and computational logic.</p>
               </li>
+              <li class="skill-row">
+                <div class="skill-meta">
+                  <span class="skill-title">C</span>
+                  <span class="skill-level">Core Foundation</span>
+                </div>
+                <p class="skill-desc">Memory layout, pointer arithmetic, embedded device programming, and system primitives.</p>
+              </li>
+              <li class="skill-row">
+                <div class="skill-meta">
+                  <span class="skill-title">C++</span>
+                  <span class="skill-level">Data Structures</span>
+                </div>
+                <p class="skill-desc">Algorithmic problem solving on LeetCode, STL data structures, algorithmic time and space analysis.</p>
+              </li>
+            </ul>
+          </div>
+
+          <!-- Column 2: Web & Interfaces -->
+          <div class="skill-category-card">
+            <div class="category-header">
+              <span class="category-code">WEB_02</span>
+              <h3 class="category-name">Web &amp; User Interfaces</h3>
+            </div>
+            <p class="category-summary">Crafting accessible, standards-compliant, and high-performance interfaces.</p>
+            <ul class="skill-items-list">
               <li class="skill-row">
                 <div class="skill-meta">
                   <span class="skill-title">JavaScript (ES6+)</span>
-                  <span class="skill-level">Interactive Dynamics</span>
+                  <span class="skill-level">Proficient</span>
                 </div>
-                <p class="skill-desc">Event delegation, projectile vector math, asynchronous loops, and high-frequency DOM manipulation.</p>
+                <p class="skill-desc">Asynchronous execution, DOM manipulation, REST consumption, and dynamic single-page interactions.</p>
               </li>
               <li class="skill-row">
                 <div class="skill-meta">
-                  <span class="skill-title">C &amp; C++</span>
-                  <span class="skill-level">Systems &amp; Problem Solving</span>
+                  <span class="skill-title">HTML5 &amp; CSS3</span>
+                  <span class="skill-level">Semantic &amp; Responsive</span>
                 </div>
-                <p class="skill-desc">Memory structures, pointer logic, algorithmic analysis, and competitive practice on LeetCode.</p>
+                <p class="skill-desc">Fluid grid layouts, modern Flexbox/Grid, accessible ARIA roles, CSS variables, and bespoke design systems.</p>
+              </li>
+              <li class="skill-row">
+                <div class="skill-meta">
+                  <span class="skill-title">Bootstrap &amp; PHP</span>
+                  <span class="skill-level">Application Development</span>
+                </div>
+                <p class="skill-desc">Rapid interface scaffolding, server-side data processing, and lightweight API endpoints.</p>
               </li>
             </ul>
           </div>
 
-          <!-- Column 2: Web & Interface Architecture -->
-          <div class="skill-category-card">
-            <div class="category-header">
-              <span class="category-code">FRONT_02</span>
-              <h3 class="category-name">Web &amp; Spatial Interfaces</h3>
-            </div>
-            <p class="category-summary">Crafting responsive, standards-compliant, and mathematically animated web applications.</p>
-            <ul class="skill-items-list">
-              <li class="skill-row">
-                <div class="skill-meta">
-                  <span class="skill-title">HTML5 &amp; Semantic Web</span>
-                  <span class="skill-level">Accessible Standards</span>
-                </div>
-                <p class="skill-desc">Clean document hierarchies, ARIA accessibility attributes, and SEO-friendly structures.</p>
-              </li>
-              <li class="skill-row">
-                <div class="skill-meta">
-                  <span class="skill-title">CSS3 &amp; CSS 3D Transforms</span>
-                  <span class="skill-level">Spatial Mastery</span>
-                </div>
-                <p class="skill-desc">Perspective matrix transformations, keyframe animation loops, Flexbox/Grid systems, and custom design tokens.</p>
-              </li>
-              <li class="skill-row">
-                <div class="skill-meta">
-                  <span class="skill-title">Responsive UI &amp; Prototyping</span>
-                  <span class="skill-level">Cross-Device Craft</span>
-                </div>
-                <p class="skill-desc">Fluid layouts adapted across mobile and desktop breakpoints, interface mockups using Figma.</p>
-              </li>
-            </ul>
-          </div>
-
-          <!-- Column 3: Data & Developer Tooling -->
+          <!-- Column 3: Data & Infrastructure -->
           <div class="skill-category-card">
             <div class="category-header">
               <span class="category-code">DATA_03</span>
-              <h3 class="category-name">Databases &amp; Tooling</h3>
+              <h3 class="category-name">Databases &amp; Systems</h3>
             </div>
-            <p class="category-summary">Data modeling, relational storage, version management, and productive developer workflows.</p>
+            <p class="category-summary">Managing relational and document state alongside infrastructure protocols.</p>
             <ul class="skill-items-list">
               <li class="skill-row">
                 <div class="skill-meta">
-                  <span class="skill-title">DBMS &amp; MySQL</span>
-                  <span class="skill-level">Relational Storage</span>
+                  <span class="skill-title">MySQL &amp; Relational DBs</span>
+                  <span class="skill-level">Schema &amp; Queries</span>
                 </div>
-                <p class="skill-desc">Relational schema design, normalization, structured query language, and transactional integrity.</p>
+                <p class="skill-desc">Relational schema design, normalization, complex joins, and transactional data integrity.</p>
               </li>
               <li class="skill-row">
                 <div class="skill-meta">
-                  <span class="skill-title">Git &amp; GitHub</span>
-                  <span class="skill-level">Version Control</span>
+                  <span class="skill-title">MongoDB</span>
+                  <span class="skill-level">Document Store</span>
                 </div>
-                <p class="skill-desc">Branch workflows, commit provenance, remote repository management, and collaboration hygiene.</p>
+                <p class="skill-desc">JSON-based document schemas, flexible object storage, and high-throughput application logging.</p>
               </li>
               <li class="skill-row">
                 <div class="skill-meta">
-                  <span class="skill-title">VS Code &amp; Jupyter Notebook</span>
-                  <span class="skill-level">Development Environment</span>
+                  <span class="skill-title">DNS, SSL &amp; Network Routing</span>
+                  <span class="skill-level">Configuration</span>
                 </div>
-                <p class="skill-desc">Script prototyping, algorithm debugging, data exploration, and rapid interface authoring.</p>
+                <p class="skill-desc">Domain delegation, CNAME records, HTTPS/SSL certificates, and endpoint routing verification.</p>
               </li>
             </ul>
           </div>
 
-          <!-- Column 4: Hardware & Collaborative Craft -->
+          <!-- Column 4: Embedded & Analytical Tools -->
           <div class="skill-category-card">
             <div class="category-header">
-              <span class="category-code">CORE_04</span>
-              <h3 class="category-name">Hardware &amp; Human Craft</h3>
+              <span class="category-code">TOOL_04</span>
+              <h3 class="category-name">Hardware &amp; Enterprise Platforms</h3>
             </div>
-            <p class="category-summary">Cross-disciplinary competencies spanning physical circuits to collaborative agile teamwork.</p>
+            <p class="category-summary">Cross-disciplinary tooling bridging microcontrollers with corporate analytics.</p>
             <ul class="skill-items-list">
               <li class="skill-row">
                 <div class="skill-meta">
-                  <span class="skill-title">Sensor Automation</span>
-                  <span class="skill-level">Electrical &amp; BEEE</span>
+                  <span class="skill-title">Arduino &amp; ESP32</span>
+                  <span class="skill-level">Embedded Prototyping</span>
                 </div>
-                <p class="skill-desc">Photoresistor (LDR) circuits, flame infrared sensing, conductive moisture grids, and electromechanical relays.</p>
+                <p class="skill-desc">Firmware flashing, GPIO control, sensor polling, wireless serial communication, and relay driving.</p>
               </li>
               <li class="skill-row">
                 <div class="skill-meta">
-                  <span class="skill-title">Problem Solving &amp; Logic</span>
-                  <span class="skill-level">Algorithmic Practice</span>
+                  <span class="skill-title">Tableau &amp; SAP</span>
+                  <span class="skill-level">Data Visualization</span>
                 </div>
-                <p class="skill-desc">Continuous LeetCode problem solving, computational complexity decomposition, and systematic debugging.</p>
+                <p class="skill-desc">Enterprise report syndication, dashboard embedding, metric aggregation, and stakeholder reporting.</p>
               </li>
               <li class="skill-row">
                 <div class="skill-meta">
-                  <span class="skill-title">Collaboration &amp; Adaptability</span>
-                  <span class="skill-level">Teamwork</span>
+                  <span class="skill-title">Core Soft Skills</span>
+                  <span class="skill-level">Professional Practice</span>
                 </div>
-                <p class="skill-desc">Peer tutoring, time management under academic sprint deadlines, and clear technical communication.</p>
+                <p class="skill-desc">Problem-Solving, Time Management, Team work, and Cross-functional Communication Skills.</p>
               </li>
             </ul>
           </div>
         </div>
 
-        <!-- 150-Hour Programming Course & LeetCode Discipline Spotlight -->
+        <!-- Problem Solving Spotlight -->
         <div class="problem-solving-banner">
           <div class="banner-content">
-            <span class="banner-tag">Structured Learning &amp; Algorithmic Practice</span>
-            <h3 class="banner-title">150+ Hours of Intensive Programming &amp; LeetCode Practice</h3>
+            <span class="banner-tag">Algorithmic Problem-Solving Discipline</span>
+            <h3 class="banner-title">200+ Problems Solved &amp; LeetCode 100-Day Badge</h3>
             <p class="banner-desc">
-              Completed an intensive 150-hour structured programming curriculum covering procedural algorithms, data structure design, and object-oriented systems. Continually sharpening analytical problem-solving skills through regular LeetCode practice and university technical challenges.
+              Every day for over one hundred uninterrupted days, I dedicated time to tackling competitive coding challenges. This habit sharpened my understanding of graph traversal, dynamic programming, tree traversals, two-pointer arrays, and space-time optimization. It remains the foundation of how I analyze software performance today.
             </p>
           </div>
           <div class="banner-badge-box">
@@ -657,18 +553,18 @@
                 <polygon points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2"></polygon>
               </svg>
             </div>
-            <span class="badge-caption">150-Hour Track</span>
-            <span class="badge-sub">Programming Mastery</span>
+            <span class="badge-caption">100 Days Badge</span>
+            <span class="badge-sub">Daily Consistency Verified</span>
           </div>
         </div>
       </div>
     </section>
 
-    <!-- Timeline, Education & Certifications -->
-    <section class="section milestones-section" id="journey">
+    <!-- Milestones, Education & Community -->
+    <section class="section milestones-section" id="milestones">
       <div class="container">
         <div class="section-header">
-          <span class="section-sub">Academic &amp; Professional Timeline</span>
+          <span class="section-sub">Timeline &amp; Background</span>
           <h2 class="section-title">Education &amp; Milestones</h2>
         </div>
 
@@ -677,79 +573,95 @@
           <!-- Item 1: LPU B.Tech -->
           <div class="timeline-item">
             <div class="timeline-meta">
-              <span class="timeline-year">Aug 2025 &ndash; Present</span>
-              <span class="timeline-location">Phagwara, Punjab</span>
+              <span class="timeline-year">Graduating</span>
+              <span class="timeline-location">Punjab, India</span>
             </div>
             <div class="timeline-body">
               <span class="timeline-type">Higher Education</span>
               <h3 class="timeline-title">Lovely Professional University (LPU)</h3>
-              <div class="timeline-subtitle">Bachelor of Technology &mdash; Computer Science and Engineering | CGPA: 7.50</div>
+              <div class="timeline-subtitle">Bachelor of Technology &mdash; Computer Science and Engineering</div>
               <p class="timeline-text">
-                Undergraduate engineering studies specializing in data structures, computer algorithms, database management systems, operating systems, and electrical circuits. Actively engaged in technical clubs, hackathon sprints, and project-based software creation.
+                Comprehensive academic rigor focusing on data structures, algorithms, computer networks, database management systems, operating systems, and distributed computing. Maintained a consistent academic standing with a <strong>CGPA of 7.5</strong>.
               </p>
             </div>
           </div>
 
-          <!-- Item 2: Community Development Project (Python Tutoring) -->
+          <!-- Item 2: Hackathon Achievement -->
           <div class="timeline-item">
             <div class="timeline-meta">
-              <span class="timeline-year">Community Project</span>
-              <span class="timeline-location">Lovely Professional Univ.</span>
+              <span class="timeline-year">Competition</span>
+              <span class="timeline-location">College Hackathon</span>
+            </div>
+            <div class="timeline-body">
+              <span class="timeline-type">Engineering Achievement</span>
+              <h3 class="timeline-title">Top 10 Finalist / 50+ Competing Teams</h3>
+              <div class="timeline-subtitle">University Web Solution Hackathon Prototype</div>
+              <p class="timeline-text">
+                Formed and led a technical squad to design, build, and pitch an innovative web application prototype under intense sprint deadlines. Competed against more than fifty collegiate engineering squads, successfully earning a top 10 finalist placement through clean architecture and live prototype demonstration.
+              </p>
+            </div>
+          </div>
+
+          <!-- Item 3: Volunteer Tutoring -->
+          <div class="timeline-item">
+            <div class="timeline-meta">
+              <span class="timeline-year">July 2026</span>
+              <span class="timeline-location">Community Initiative</span>
             </div>
             <div class="timeline-body">
               <span class="timeline-type">Social Impact &amp; Mentorship</span>
-              <h3 class="timeline-title">Community Development Project &mdash; Python Tutoring</h3>
-              <div class="timeline-subtitle">Student Mentorship &amp; Peer Code Education</div>
+              <h3 class="timeline-title">Volunteer Python Tutoring &mdash; NGO Initiative</h3>
+              <div class="timeline-subtitle">Community Code Education</div>
               <p class="timeline-text">
-                Participated in a university-organized Community Development Project dedicated to tutoring peers and community members in Python programming fundamentals. Designed relatable coding exercises that demystified syntax, logic branching, and data arrays, strengthening team collaboration and technical empathy.
+                Conducted structured hands-on tutoring sessions in Python fundamentals, logical reasoning, and basic algorithmic thinking for students from underserved communities. Explaining core computer science principles in intuitive, accessible terms deepened my own clarity as an engineer.
               </p>
             </div>
           </div>
 
-          <!-- Item 3: Certifications -->
+          <!-- Item 4: AI & Python Certifications -->
           <div class="timeline-item">
             <div class="timeline-meta">
-              <span class="timeline-year">May &ndash; Aug 2026</span>
-              <span class="timeline-location">Verified Credentials</span>
+              <span class="timeline-year">Feb &ndash; Mar 2026</span>
+              <span class="timeline-location">Certified Learning</span>
             </div>
             <div class="timeline-body">
-              <span class="timeline-type">Professional Certifications</span>
-              <h3 class="timeline-title">Springboard &amp; NeoColab Certifications</h3>
-              <div class="timeline-subtitle">Programming Fundamentals &amp; Computer Programming</div>
+              <span class="timeline-type">Professional Development</span>
+              <h3 class="timeline-title">Certifications: Artificial Intelligence &amp; Python Foundations</h3>
+              <div class="timeline-subtitle">Rigorous Independent Coursework</div>
               <p class="timeline-text">
-                Earned certification in <em>Programming Fundamentals Using Python &ndash; Part 1</em> from <strong>Springboard</strong> (August 2026), alongside completing formal certification in <em>Computer Programming</em> through <strong>NeoColab</strong> (May 2026), establishing strong conceptual foundations in software construction.
+                Earned formal certification in <em>Introduction to Artificial Intelligence</em> (March 2026) covering search strategies, neural concepts, and machine learning primitives, preceded by <em>Introduction to Python</em> (February 2026) confirming advanced OOP and script automation capabilities.
               </p>
             </div>
           </div>
 
-          <!-- Item 4: Narayana Junior College -->
+          <!-- Item 5: Intermediate Education -->
           <div class="timeline-item">
             <div class="timeline-meta">
-              <span class="timeline-year">May 2023 &ndash; Mar 2025</span>
-              <span class="timeline-location">Nellore, Andhra Pradesh</span>
+              <span class="timeline-year">2021 &ndash; 2023</span>
+              <span class="timeline-location">Tirupati, AP</span>
             </div>
             <div class="timeline-body">
-              <span class="timeline-type">Higher Secondary Education</span>
-              <h3 class="timeline-title">Narayana Junior College</h3>
-              <div class="timeline-subtitle">Intermediate Education &mdash; 97% Aggregate Distinction</div>
+              <span class="timeline-type">Pre-University Education</span>
+              <h3 class="timeline-title">Bharatiya Vidya Bhavan's</h3>
+              <div class="timeline-subtitle">Intermediate / Higher Secondary &mdash; 84% Aggregate</div>
               <p class="timeline-text">
-                Graduated with exceptional academic distinction, scoring a <strong>97% aggregate</strong> in Mathematics, Physics, and Chemistry. This quantitative foundation directly empowers my current work in 3D transformations, computational geometry, and circuit analysis.
+                Rigorous foundations in Mathematics, Physics, and analytical sciences providing the quantitative baseline for engineering computation and algorithmic logic.
               </p>
             </div>
           </div>
 
-          <!-- Item 5: Kesava Reddy High School -->
+          <!-- Item 6: High School Education -->
           <div class="timeline-item">
             <div class="timeline-meta">
-              <span class="timeline-year">Jun 2022 &ndash; Mar 2023</span>
-              <span class="timeline-location">Mamandur, Andhra Pradesh</span>
+              <span class="timeline-year">2020 &ndash; 2021</span>
+              <span class="timeline-location">Andhra Pradesh</span>
             </div>
             <div class="timeline-body">
               <span class="timeline-type">Secondary Schooling</span>
-              <h3 class="timeline-title">Kesava Reddy High School</h3>
-              <div class="timeline-subtitle">Secondary School Certificate &mdash; 87% Aggregate Distinction</div>
+              <h3 class="timeline-title">Keshava Reddy High School</h3>
+              <div class="timeline-subtitle">Secondary School Certificate &mdash; 87% Aggregate</div>
               <p class="timeline-text">
-                Completed secondary schooling with academic distinction, nurturing early discipline, scientific curiosity, and consistent problem-solving habits.
+                Graduated with distinction, laying early habits of disciplined study, scientific inquiry, and academic excellence.
               </p>
             </div>
           </div>
@@ -758,15 +670,15 @@
       </div>
     </section>
 
-    <!-- Contact & Direct Communication -->
+    <!-- Contact & Collaborative Dialogue -->
     <section class="section contact-section" id="contact">
       <div class="container">
         <div class="contact-card">
           <div class="contact-header-area">
-            <span class="section-sub">Direct Channel</span>
-            <h2 class="contact-title">Let's discuss engineering, projects, or open roles.</h2>
+            <span class="section-sub">Start a Dialogue</span>
+            <h2 class="contact-title">Let's build something durable together.</h2>
             <p class="contact-desc">
-              Whether you are looking for an engineer who thrives building responsive, interactive client-side systems, has hands-on experience with hardware sensors, or want to collaborate on innovative web prototypes, I welcome the dialogue.
+              Whether you have an open engineering role, need an engineer who is comfortable writing low-level firmware or scalable web applications, or want to discuss a project, I am readily available.
             </p>
           </div>
 
@@ -776,8 +688,8 @@
               <div class="contact-method">
                 <span class="method-label">Direct Email</span>
                 <div class="method-interactive">
-                  <a href="mailto:rsudharshan354@gmail.com" class="method-value">rsudharshan354@gmail.com</a>
-                  <button class="icon-copy-btn" id="copyEmailContactBtn" data-email="rsudharshan354@gmail.com" aria-label="Copy email address" title="Copy email">
+                  <a href="mailto:sjohnmathew07@gmail.com" class="method-value">sjohnmathew07@gmail.com</a>
+                  <button class="icon-copy-btn" id="copyEmailContactBtn" data-email="sjohnmathew07@gmail.com" aria-label="Copy email address" title="Copy email">
                     <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><rect x="9" y="9" width="13" height="13" rx="2" ry="2"></rect><path d="M5 15H4a2 2 0 0 1-2-2V4a2 2 0 0 1 2-2h9a2 2 0 0 1 2 2v1"></path></svg>
                   </button>
                 </div>
@@ -786,18 +698,18 @@
               <div class="contact-method">
                 <span class="method-label">Direct Phone / WhatsApp</span>
                 <div class="method-interactive">
-                  <a href="tel:+919100980829" class="method-value">+91 9100980829</a>
+                  <a href="tel:+918096801927" class="method-value">+91 8096801927</a>
                 </div>
               </div>
 
               <div class="contact-method">
                 <span class="method-label">Professional Networks</span>
                 <div class="method-socials">
-                  <a href="https://github.com/rsudharshan354-art" target="_blank" rel="noopener noreferrer" class="social-chip">
-                    <span>GitHub (@rsudharshan354-art)</span>
+                  <a href="https://github.com/sjohnmathew07" target="_blank" rel="noopener noreferrer" class="social-chip">
+                    <span>GitHub Profile</span>
                     <svg class="mini-arrow" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><line x1="7" y1="17" x2="17" y2="7"></line><polyline points="7 7 17 7 17 17"></polyline></svg>
                   </a>
-                  <a href="https://www.linkedin.com/in/veeramreddy-sudharshanreddy-32b727395" target="_blank" rel="noopener noreferrer" class="social-chip">
+                  <a href="https://www.linkedin.com/in/john-mathew-sudha-0a6616379/" target="_blank" rel="noopener noreferrer" class="social-chip">
                     <span>LinkedIn Profile</span>
                     <svg class="mini-arrow" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><line x1="7" y1="17" x2="17" y2="7"></line><polyline points="7 7 17 7 17 17"></polyline></svg>
                   </a>
@@ -807,8 +719,8 @@
               <div class="availability-callout">
                 <div class="avail-indicator"></div>
                 <div>
-                  <strong>Status: Open for Opportunities</strong>
-                  <p>Seeking software engineering internships, frontend development, and collaborative technical projects.</p>
+                  <strong>Status: Actively Interviewing</strong>
+                  <p>Open for full-time Software Engineering, Backend, Embedded/IoT, and Full-Stack opportunities.</p>
                 </div>
               </div>
             </div>
@@ -818,29 +730,29 @@
               <form id="contactForm" class="contact-form" novalidate>
                 <div class="form-group">
                   <label for="senderName" class="form-label">Your Name or Organization</label>
-                  <input type="text" id="senderName" name="name" class="form-input" placeholder="e.g. Maya Chen / Tech Innovations" required>
+                  <input type="text" id="senderName" name="name" class="form-input" placeholder="e.g. Elena Rostova / Acme Corp" required>
                   <span class="form-error" id="nameError"></span>
                 </div>
 
                 <div class="form-group">
                   <label for="senderEmail" class="form-label">Your Email Address</label>
-                  <input type="email" id="senderEmail" name="email" class="form-input" placeholder="e.g. maya@techinnovations.com" required>
+                  <input type="email" id="senderEmail" name="email" class="form-input" placeholder="e.g. elena@acme.com" required>
                   <span class="form-error" id="emailError"></span>
                 </div>
 
                 <div class="form-group">
-                  <label for="inquiryType" class="form-label">Inquiry Subject</label>
+                  <label for="inquiryType" class="form-label">Nature of Inquiry</label>
                   <select id="inquiryType" name="inquiryType" class="form-select">
-                    <option value="Software Internship">Software Engineering Internship / Role</option>
-                    <option value="Interactive Web Project">Interactive Web / 3D Frontend Project</option>
-                    <option value="Hardware Automation">IoT / Sensor Automation Collaboration</option>
-                    <option value="General Technical Exchange">General Technical Dialogue</option>
+                    <option value="Full-Time Engineering Role">Full-Time Software Engineering Role</option>
+                    <option value="Contract or IoT Project">Contract, Embedded, or IoT Initiative</option>
+                    <option value="Technical Collaboration">Technical Collaboration / Research</option>
+                    <option value="General Conversation">General Conversation</option>
                   </select>
                 </div>
 
                 <div class="form-group">
                   <label for="messageBody" class="form-label">Your Message</label>
-                  <textarea id="messageBody" name="message" class="form-textarea" rows="4" placeholder="Describe the role, prototype, or technical challenge you'd like to collaborate on..." required></textarea>
+                  <textarea id="messageBody" name="message" class="form-textarea" rows="4" placeholder="Share a few details about the position, technical challenges, or collaboration..." required></textarea>
                   <span class="form-error" id="messageError"></span>
                 </div>
 
@@ -861,28 +773,28 @@
   <!-- Toast Notification Overlay -->
   <div class="toast-container" id="toastContainer" aria-live="polite"></div>
 
-  <!-- Minimalist Monochrome Footer -->
+  <!-- Minimalist Editorial Footer -->
   <footer class="site-footer">
     <div class="container footer-container">
       <div class="footer-col-left">
-        <span class="footer-brand">Sudharshan Reddy</span>
+        <span class="footer-brand">S. John Mathew</span>
         <p class="footer-tagline">
-          Crafted with HTML5, CSS3, and JavaScript. Zero emojis. 100% monochrome.
+          Built with HTML, Vanilla CSS, and JavaScript. Designed strictly in monochrome.
         </p>
       </div>
 
       <div class="footer-col-mid">
         <div class="footer-links">
           <a href="#about">About</a>
-          <a href="#projects">Projects</a>
+          <a href="#work">Work</a>
           <a href="#capabilities">Capabilities</a>
-          <a href="#journey">Journey</a>
+          <a href="#milestones">Milestones</a>
           <a href="#contact">Contact</a>
         </div>
       </div>
 
       <div class="footer-col-right">
-        <p class="footer-copy">&copy; <span id="currentYear">2026</span> Sudharshan Reddy. All rights reserved.</p>
+        <p class="footer-copy">&copy; <span id="currentYear">2026</span> S. John Mathew. All rights reserved.</p>
         <a href="#top" class="back-to-top" aria-label="Return to top of page">
           <span>Back to Top</span>
           <svg class="mini-arrow-up" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><line x1="12" y1="19" x2="12" y2="5"></line><polyline points="5 12 12 5 19 12"></polyline></svg>

@@ -1,11 +1,10 @@
 /**
- * SUDHARSHAN REDDY — EDITORIAL MONOCHROME PORTFOLIO
+ * S. JOHN MATHEW — EDITORIAL MONOCHROME PORTFOLIO
  * Vanilla JavaScript (Zero External Dependencies, Zero Emojis)
  */
 
 document.addEventListener('DOMContentLoaded', () => {
   initLocalClock();
-  initInteractiveCube();
   initNavigation();
   initProjectFiltering();
   initClipboardActions();
@@ -33,6 +32,7 @@ function initLocalClock() {
       const timeString = formatter.format(new Date());
       clockElement.textContent = `${timeString} IST`;
     } catch (e) {
+      // Fallback
       const now = new Date();
       clockElement.textContent = now.toTimeString().split(' ')[0] + ' IST';
     }
@@ -40,108 +40,6 @@ function initLocalClock() {
 
   updateClock();
   setInterval(updateClock, 1000);
-}
-
-/**
- * Interactive 3D Cube Widget: Pointer Drag & Button Controls
- */
-function initInteractiveCube() {
-  const cube = document.getElementById('interactiveCube');
-  const scene = document.getElementById('cubeScene');
-  const btnRotateX = document.getElementById('cubeRotateX');
-  const btnRotateY = document.getElementById('cubeRotateY');
-  const btnReset = document.getElementById('cubeReset');
-
-  if (!cube || !scene) return;
-
-  let currentX = -22;
-  let currentY = 32;
-  let isDragging = false;
-  let startX = 0;
-  let startY = 0;
-
-  function applyTransform() {
-    cube.style.transform = `rotateX(${currentX}deg) rotateY(${currentY}deg)`;
-  }
-
-  // Pointer drag interactions
-  scene.addEventListener('mousedown', (e) => {
-    isDragging = true;
-    startX = e.clientX;
-    startY = e.clientY;
-    scene.style.cursor = 'grabbing';
-  });
-
-  window.addEventListener('mousemove', (e) => {
-    if (!isDragging) return;
-    const deltaX = e.clientX - startX;
-    const deltaY = e.clientY - startY;
-
-    currentY += deltaX * 0.45;
-    currentX -= deltaY * 0.45;
-
-    startX = e.clientX;
-    startY = e.clientY;
-
-    applyTransform();
-  });
-
-  window.addEventListener('mouseup', () => {
-    if (isDragging) {
-      isDragging = false;
-      scene.style.cursor = 'grab';
-    }
-  });
-
-  // Touch controls for mobile
-  scene.addEventListener('touchstart', (e) => {
-    if (e.touches.length === 1) {
-      isDragging = true;
-      startX = e.touches[0].clientX;
-      startY = e.touches[0].clientY;
-    }
-  }, { passive: true });
-
-  window.addEventListener('touchmove', (e) => {
-    if (!isDragging || e.touches.length !== 1) return;
-    const deltaX = e.touches[0].clientX - startX;
-    const deltaY = e.touches[0].clientY - startY;
-
-    currentY += deltaX * 0.4;
-    currentX -= deltaY * 0.4;
-
-    startX = e.touches[0].clientX;
-    startY = e.touches[0].clientY;
-
-    applyTransform();
-  }, { passive: true });
-
-  window.addEventListener('touchend', () => {
-    isDragging = false;
-  });
-
-  // Buttons controls
-  if (btnRotateX) {
-    btnRotateX.addEventListener('click', () => {
-      currentX += 45;
-      applyTransform();
-    });
-  }
-
-  if (btnRotateY) {
-    btnRotateY.addEventListener('click', () => {
-      currentY += 45;
-      applyTransform();
-    });
-  }
-
-  if (btnReset) {
-    btnReset.addEventListener('click', () => {
-      currentX = -22;
-      currentY = 32;
-      applyTransform();
-    });
-  }
 }
 
 /**
@@ -251,11 +149,12 @@ function initClipboardActions() {
 
   copyButtons.forEach(button => {
     button.addEventListener('click', async () => {
-      const email = button.getAttribute('data-email') || 'rsudharshan354@gmail.com';
+      const email = button.getAttribute('data-email') || 'sjohnmathew07@gmail.com';
       try {
         await navigator.clipboard.writeText(email);
         showToast(`Email copied to clipboard: ${email}`);
       } catch (err) {
+        // Fallback for non-secure contexts
         const tempInput = document.createElement('input');
         tempInput.value = email;
         document.body.appendChild(tempInput);
@@ -282,6 +181,7 @@ function showToast(message) {
 
   container.appendChild(toast);
 
+  // Force reflow
   void toast.offsetWidth;
   toast.classList.add('show');
 
@@ -354,9 +254,9 @@ function initContactForm() {
       form.reset();
 
       feedback.className = 'form-feedback success';
-      feedback.textContent = `Thank you, ${senderName}. Your message has been prepared. For direct communication, you may also write directly to rsudharshan354@gmail.com or call +91 9100980829.`;
+      feedback.textContent = `Thank you, ${senderName}. Your message has been prepared. For direct communication, you may also write directly to sjohnmathew07@gmail.com or call +91 8096801927.`;
       
-      showToast('Message inquiry dispatched successfully.');
+      showToast('Message inquiry sent successfully.');
 
       setTimeout(() => {
         feedback.style.display = 'none';
