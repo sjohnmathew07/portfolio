@@ -1,0 +1,803 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>S. John Mathew &mdash; Software Engineer &amp; Systems Builder</title>
+  <meta name="description" content="Portfolio of S. John Mathew: Software Engineer, IoT Developer, and Algorithmic Problem Solver. Building thoughtful web platforms and embedded hardware systems.">
+  
+  <!-- Typography -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&family=JetBrains+Mono:wght@400;500;600&family=Space+Grotesk:wght@400;500;600;700&display=swap" rel="stylesheet">
+  
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+  <!-- Background Grid & Grain Layer -->
+  <div class="bg-grid-overlay" aria-hidden="true"></div>
+
+  <!-- Header / Navigation -->
+  <header class="site-header" id="top">
+    <div class="container nav-container">
+      <a href="#top" class="brand-link" aria-label="Home">
+        <span class="brand-mark">JM</span>
+        <span class="brand-name">S. John Mathew</span>
+      </a>
+
+      <div class="nav-status-pill desktop-only">
+        <span class="status-indicator"></span>
+        <span class="status-text">Available for engineering roles</span>
+      </div>
+
+      <nav class="nav-links" id="navLinks" aria-label="Main Navigation">
+        <a href="#about" class="nav-link">About</a>
+        <a href="#work" class="nav-link">Work</a>
+        <a href="#capabilities" class="nav-link">Capabilities</a>
+        <a href="#milestones" class="nav-link">Milestones</a>
+        <a href="#contact" class="nav-link btn-nav">Contact</a>
+      </nav>
+
+      <button class="menu-toggle mobile-only" id="menuToggle" aria-label="Toggle navigation menu" aria-expanded="false">
+        <span class="menu-bar"></span>
+        <span class="menu-bar"></span>
+      </button>
+    </div>
+  </header>
+
+  <main>
+    <!-- Hero Section -->
+    <section class="hero-section" id="hero">
+      <div class="container hero-container">
+        <div class="hero-meta-row">
+          <span class="hero-tag">Computer Science &amp; Engineering</span>
+          <div class="hero-location">
+            <svg class="icon-svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><circle cx="12" cy="12" r="10"></circle><polygon points="16.24 7.76 14.12 14.12 7.76 16.24 9.88 9.88 16.24 7.76"></polygon></svg>
+            <span>Punjab / Andhra Pradesh, India</span>
+          </div>
+          <div class="hero-time" id="localTimeDisplay">
+            <span class="time-label">Local Time:</span>
+            <span class="time-value" id="currentTime">--:--:-- IST</span>
+          </div>
+        </div>
+
+        <h1 class="hero-title">
+          Engineering reliable software systems from bare silicon to modern web architectures.
+        </h1>
+
+        <p class="hero-lead">
+          I am a software engineer and computer science graduate from Lovely Professional University. I bridge the gap between low-level hardware communication and resilient full-stack applications &mdash; whether orchestrating microcontrollers to control physical circuits or engineering white-label enterprise analytics platforms.
+        </p>
+
+        <div class="hero-cta-group">
+          <a href="#work" class="btn btn-primary">
+            <span>Explore Featured Work</span>
+            <svg class="btn-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><line x1="7" y1="17" x2="17" y2="7"></line><polyline points="7 7 17 7 17 17"></polyline></svg>
+          </a>
+          <a href="#contact" class="btn btn-secondary">
+            <span>Initiate Conversation</span>
+          </a>
+          <button class="btn btn-tertiary" id="copyEmailQuickBtn" data-email="sjohnmathew07@gmail.com" title="Copy email address">
+            <svg class="btn-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><rect x="9" y="9" width="13" height="13" rx="2" ry="2"></rect><path d="M5 15H4a2 2 0 0 1-2-2V4a2 2 0 0 1 2-2h9a2 2 0 0 1 2 2v1"></path></svg>
+            <span class="copy-text">sjohnmathew07@gmail.com</span>
+          </button>
+        </div>
+
+        <!-- Metric Ticker Strip -->
+        <div class="hero-stats-strip">
+          <div class="stat-box">
+            <div class="stat-number">200+</div>
+            <div class="stat-label">Algorithmic Problems Solved</div>
+          </div>
+          <div class="stat-divider"></div>
+          <div class="stat-box">
+            <div class="stat-number">100 Days</div>
+            <div class="stat-label">Consecutive LeetCode Problem Streak</div>
+          </div>
+          <div class="stat-divider"></div>
+          <div class="stat-box">
+            <div class="stat-number">Top 10</div>
+            <div class="stat-label">Hackathon Finalist / 50+ Teams</div>
+          </div>
+          <div class="stat-divider"></div>
+          <div class="stat-box">
+            <div class="stat-number">7.5</div>
+            <div class="stat-label">B.Tech CGPA / Lovely Professional Univ.</div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Narrative About Section -->
+    <section class="section about-section" id="about">
+      <div class="container">
+        <div class="section-header">
+          <span class="section-sub">Personal Perspective</span>
+          <h2 class="section-title">The Engineering Philosophy</h2>
+        </div>
+
+        <div class="about-grid">
+          <div class="about-text-column">
+            <p class="paragraph-highlight">
+              "Great software is not merely lines of code; it is the thoughtful translation of a real human need into a dependable, deterministic system."
+            </p>
+            <p>
+              My journey in computing started with a curiosity about how abstract logic controls tangible reality. That curiosity led me to explore both ends of the engineering spectrum: writing deterministic low-level routines in C and C++ to interact directly with hardware registers and microcontrollers, as well as building responsive, user-facing web tools in JavaScript, Python, and modern web frameworks.
+            </p>
+            <p>
+              I believe in disciplined consistency. Solving over 200 algorithmic challenges and maintaining a 100-day consecutive problem-solving streak on LeetCode was not just about passing test cases &mdash; it was a deliberate practice in breaking complex, ambiguous requirements down into optimal time and space complexities.
+            </p>
+            <p>
+              Beyond solo engineering, I have actively mentored aspiring developers through an NGO tutoring initiative and collaborated under high pressure in collegiate hackathons, ranking among the top 10 out of over 50 competing squads.
+            </p>
+
+            <div class="about-key-tenets">
+              <div class="tenet-card">
+                <span class="tenet-number">01</span>
+                <h3 class="tenet-title">Hardware-Software Synergy</h3>
+                <p class="tenet-desc">Understanding signals, microcontrollers, and electrical boundaries gives me a grounded sense of computing limits and memory efficiency.</p>
+              </div>
+              <div class="tenet-card">
+                <span class="tenet-number">02</span>
+                <h3 class="tenet-title">Algorithmic Rigor</h3>
+                <p class="tenet-desc">Applying structured data structures and algorithmic thinking to ensure every architecture scales predictably under real workloads.</p>
+              </div>
+              <div class="tenet-card">
+                <span class="tenet-number">03</span>
+                <h3 class="tenet-title">Human-Centered Utility</h3>
+                <p class="tenet-desc">Building software that respects user workflows, whether it is an intuitive automation dashboard or clear technical documentation.</p>
+              </div>
+            </div>
+          </div>
+
+          <aside class="about-sidebar">
+            <div class="profile-card">
+              <div class="profile-card-header">
+                <div class="profile-avatar-placeholder">
+                  <span class="avatar-initials">SJM</span>
+                </div>
+                <div>
+                  <h3 class="profile-name">S. John Mathew</h3>
+                  <p class="profile-title">Software Engineer</p>
+                </div>
+              </div>
+
+              <div class="profile-meta-list">
+                <div class="meta-item">
+                  <span class="meta-label">Degree</span>
+                  <span class="meta-value">B.Tech &mdash; Computer Science</span>
+                </div>
+                <div class="meta-item">
+                  <span class="meta-label">Institution</span>
+                  <span class="meta-value">Lovely Professional University</span>
+                </div>
+                <div class="meta-item">
+                  <span class="meta-label">Primary Languages</span>
+                  <span class="meta-value">Python, C, C++, JavaScript</span>
+                </div>
+                <div class="meta-item">
+                  <span class="meta-label">Specializations</span>
+                  <span class="meta-value">Full-Stack Web, Embedded Systems, IoT</span>
+                </div>
+                <div class="meta-item">
+                  <span class="meta-label">Code Platforms</span>
+                  <span class="meta-value">LeetCode 100-Day Badge (200+ Solved)</span>
+                </div>
+              </div>
+
+              <div class="profile-connect">
+                <a href="https://github.com/sjohnmathew07" target="_blank" rel="noopener noreferrer" class="profile-link">
+                  <span>GitHub</span>
+                  <svg class="mini-arrow" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><line x1="7" y1="17" x2="17" y2="7"></line><polyline points="7 7 17 7 17 17"></polyline></svg>
+                </a>
+                <a href="https://www.linkedin.com/in/john-mathew-sudha-0a6616379/" target="_blank" rel="noopener noreferrer" class="profile-link">
+                  <span>LinkedIn</span>
+                  <svg class="mini-arrow" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><line x1="7" y1="17" x2="17" y2="7"></line><polyline points="7 7 17 7 17 17"></polyline></svg>
+                </a>
+                <a href="mailto:sjohnmathew07@gmail.com" class="profile-link">
+                  <span>Email Direct</span>
+                  <svg class="mini-arrow" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><line x1="7" y1="17" x2="17" y2="7"></line><polyline points="7 7 17 7 17 17"></polyline></svg>
+                </a>
+              </div>
+            </div>
+          </aside>
+        </div>
+      </div>
+    </section>
+
+    <!-- Selected Engineering Work -->
+    <section class="section work-section" id="work">
+      <div class="container">
+        <div class="section-header-flex">
+          <div>
+            <span class="section-sub">Project Case Studies</span>
+            <h2 class="section-title">Selected Engineering Work</h2>
+          </div>
+          
+          <!-- Category Filter Controls -->
+          <div class="filter-controls" role="tablist" aria-label="Project filter">
+            <button class="filter-btn active" data-filter="all" role="tab" aria-selected="true">All Initiatives</button>
+            <button class="filter-btn" data-filter="embedded" role="tab" aria-selected="false">Embedded &amp; IoT</button>
+            <button class="filter-btn" data-filter="web" role="tab" aria-selected="false">Web &amp; Enterprise</button>
+          </div>
+        </div>
+
+        <div class="projects-list">
+          
+          <!-- Case Study 1: Smart Switch Board -->
+          <article class="project-card" data-category="embedded">
+            <div class="project-header">
+              <div class="project-index">Case Study 01 / Embedded Systems &amp; IoT</div>
+              <span class="project-badge">Hardware &amp; Web Bridge</span>
+            </div>
+
+            <h3 class="project-title">Smart Switch Board &mdash; Intelligent Electrical Automation System</h3>
+
+            <p class="project-summary">
+              An electronic switching ecosystem that liberates physical household infrastructure from static wall switches, allowing lights, cooling systems, and electrical appliances to be actuated automatically or remotely with low-latency bidirectional wireless communication.
+            </p>
+
+            <div class="project-grid-columns">
+              <div class="project-narrative-col">
+                <h4 class="col-heading">The Architectural Challenge</h4>
+                <p>
+                  Conventional residential switches offer zero remote telemetry, scheduled automation, or assistive control. The objective was to design a fault-tolerant switching system where physical switches, mobile app signals, and sensor triggers work harmoniously without race conditions or electrical safety compromises.
+                </p>
+                <h4 class="col-heading">The Engineering Solution</h4>
+                <p>
+                  I programmed Arduino and ESP32 microcontrollers to listen for wireless signals over Wi-Fi and Bluetooth, as well as polling local sensor states. The microcontroller processes incoming commands and drives multichannel relay modules, electrically isolating digital logic from high-voltage household circuits. In parallel, I architected a web dashboard and mobile interface enabling users to toggle appliances, inspect live state logs, and trigger timed routines.
+                </p>
+              </div>
+
+              <div class="project-specs-col">
+                <div class="specs-block">
+                  <span class="specs-label">Core Microcontroller</span>
+                  <span class="specs-data">Arduino, ESP32, Relay Array Modules</span>
+                </div>
+                <div class="specs-block">
+                  <span class="specs-label">Frontend &amp; App</span>
+                  <span class="specs-data">HTML, CSS, JavaScript, Bootstrap, MIT App Inventor</span>
+                </div>
+                <div class="specs-block">
+                  <span class="specs-label">Backend &amp; Data Store</span>
+                  <span class="specs-data">PHP, MySQL, HTTP API / REST Endpoints</span>
+                </div>
+                <div class="specs-block">
+                  <span class="specs-label">Key Capabilities</span>
+                  <span class="specs-data">Galvanic Relay Isolation, Multi-client Sync, Hardware Manual Override</span>
+                </div>
+              </div>
+            </div>
+
+            <!-- Architecture Diagram Box -->
+            <div class="architecture-box">
+              <div class="arch-title">Signal Flow &amp; System Hierarchy</div>
+              <div class="arch-flow">
+                <div class="arch-node">
+                  <span class="arch-type">Input Vectors</span>
+                  <span class="arch-val">Mobile App / Web UI / Tactile Switches</span>
+                </div>
+                <div class="arch-arrow">&rarr;</div>
+                <div class="arch-node">
+                  <span class="arch-type">Controller Processing</span>
+                  <span class="arch-val">ESP32 / Arduino Microcontroller</span>
+                </div>
+                <div class="arch-arrow">&rarr;</div>
+                <div class="arch-node">
+                  <span class="arch-type">Isolation Layer</span>
+                  <span class="arch-val">Optocoupled Relay Modules</span>
+                </div>
+                <div class="arch-arrow">&rarr;</div>
+                <div class="arch-node">
+                  <span class="arch-type">Load Execution</span>
+                  <span class="arch-val">High-Voltage Electrical Appliances</span>
+                </div>
+              </div>
+            </div>
+
+            <div class="project-tags">
+              <span class="tag">Arduino</span>
+              <span class="tag">ESP32</span>
+              <span class="tag">C / C++</span>
+              <span class="tag">Relay Modules</span>
+              <span class="tag">JavaScript</span>
+              <span class="tag">PHP</span>
+              <span class="tag">MySQL</span>
+              <span class="tag">Bootstrap</span>
+              <span class="tag">IoT Protocols</span>
+            </div>
+          </article>
+
+          <!-- Case Study 2: Optmyzr Shareable Dashboards -->
+          <article class="project-card" data-category="web">
+            <div class="project-header">
+              <div class="project-index">Case Study 02 / Web Platforms &amp; Infrastructure</div>
+              <span class="project-badge">Enterprise Dashboard Architecture</span>
+            </div>
+
+            <h3 class="project-title">Optmyzr &mdash; Shareable Live Dashboards &amp; Custom White-Label Platform</h3>
+
+            <p class="project-summary">
+              A secure client-facing analytics portal enabling digital marketing teams and enterprise agencies to provide external clients with real-time, tamper-proof reporting dashboards under fully personalized corporate branding and custom white-labeled domains.
+            </p>
+
+            <div class="project-grid-columns">
+              <div class="project-narrative-col">
+                <h4 class="col-heading">The Architectural Challenge</h4>
+                <p>
+                  High-growth agencies need to share comprehensive campaign performance reports without granting clients administrative access to core operational platforms. Furthermore, agencies require custom branding and custom domains (e.g., <span class="mono-inline">reports.agencyname.com</span>) to maintain client trust and enterprise brand cohesion.
+                </p>
+                <h4 class="col-heading">The Engineering Solution</h4>
+                <p>
+                  Engineered shareable dashboard URLs configured with granular viewing scopes and dynamic client branding injection. Implemented the custom domain routing architecture utilizing DNS CNAME records and automated SSL certificate validation, guaranteeing secure transport over HTTPS. Seamlessly integrated analytical layers across Tableau and SAP data stores to ensure live, synchronized query execution.
+                </p>
+              </div>
+
+              <div class="project-specs-col">
+                <div class="specs-block">
+                  <span class="specs-label">Infrastructure &amp; Networking</span>
+                  <span class="specs-data">DNS Orchestration, CNAME Resolution, SSL / TLS</span>
+                </div>
+                <div class="specs-block">
+                  <span class="specs-label">Analytics Integration</span>
+                  <span class="specs-data">Tableau Dashboards, SAP Enterprise Systems</span>
+                </div>
+                <div class="specs-block">
+                  <span class="specs-label">Security Model</span>
+                  <span class="specs-data">Token-based Shareable URLs, Role-bounded Scopes</span>
+                </div>
+                <div class="specs-block">
+                  <span class="specs-label">White-Labeling Features</span>
+                  <span class="specs-data">Custom Domain Mapping, Dynamic Asset Injection</span>
+                </div>
+              </div>
+            </div>
+
+            <!-- Architecture Diagram Box -->
+            <div class="architecture-box">
+              <div class="arch-title">Custom Domain Resolution &amp; White-Labeling Flow</div>
+              <div class="arch-flow">
+                <div class="arch-node">
+                  <span class="arch-type">Agency Setup</span>
+                  <span class="arch-val">Custom Domain + Brand Logo Asset</span>
+                </div>
+                <div class="arch-arrow">&rarr;</div>
+                <div class="arch-node">
+                  <span class="arch-type">Routing Layer</span>
+                  <span class="arch-val">CNAME Record Pointing &amp; DNS Check</span>
+                </div>
+                <div class="arch-arrow">&rarr;</div>
+                <div class="arch-node">
+                  <span class="arch-type">Handshake</span>
+                  <span class="arch-val">Automated SSL / TLS Provisioning</span>
+                </div>
+                <div class="arch-arrow">&rarr;</div>
+                <div class="arch-node">
+                  <span class="arch-type">Reporting Core</span>
+                  <span class="arch-val">Live Tableau &amp; SAP Feed Delivery</span>
+                </div>
+              </div>
+            </div>
+
+            <div class="project-tags">
+              <span class="tag">Tableau</span>
+              <span class="tag">SAP</span>
+              <span class="tag">DNS Management</span>
+              <span class="tag">CNAME Routing</span>
+              <span class="tag">SSL / TLS Certificates</span>
+              <span class="tag">Enterprise White-Label</span>
+              <span class="tag">Data Analytics</span>
+            </div>
+          </article>
+
+        </div>
+      </div>
+    </section>
+
+    <!-- Technical Capabilities & Craft -->
+    <section class="section capabilities-section" id="capabilities">
+      <div class="container">
+        <div class="section-header">
+          <span class="section-sub">Technical Toolkit</span>
+          <h2 class="section-title">Capabilities &amp; Core Competencies</h2>
+        </div>
+
+        <div class="skills-matrix-grid">
+          <!-- Column 1: Programming Languages -->
+          <div class="skill-category-card">
+            <div class="category-header">
+              <span class="category-code">LANG_01</span>
+              <h3 class="category-name">Programming Languages</h3>
+            </div>
+            <p class="category-summary">Primary tools used for computational logic, algorithmic reasoning, and backend routines.</p>
+            <ul class="skill-items-list">
+              <li class="skill-row">
+                <div class="skill-meta">
+                  <span class="skill-title">Python</span>
+                  <span class="skill-level">Fluent</span>
+                </div>
+                <p class="skill-desc">Object-oriented programming, data handling, scripting, automated workflows, and computational logic.</p>
+              </li>
+              <li class="skill-row">
+                <div class="skill-meta">
+                  <span class="skill-title">C</span>
+                  <span class="skill-level">Core Foundation</span>
+                </div>
+                <p class="skill-desc">Memory layout, pointer arithmetic, embedded device programming, and system primitives.</p>
+              </li>
+              <li class="skill-row">
+                <div class="skill-meta">
+                  <span class="skill-title">C++</span>
+                  <span class="skill-level">Data Structures</span>
+                </div>
+                <p class="skill-desc">Algorithmic problem solving on LeetCode, STL data structures, algorithmic time and space analysis.</p>
+              </li>
+            </ul>
+          </div>
+
+          <!-- Column 2: Web & Interfaces -->
+          <div class="skill-category-card">
+            <div class="category-header">
+              <span class="category-code">WEB_02</span>
+              <h3 class="category-name">Web &amp; User Interfaces</h3>
+            </div>
+            <p class="category-summary">Crafting accessible, standards-compliant, and high-performance interfaces.</p>
+            <ul class="skill-items-list">
+              <li class="skill-row">
+                <div class="skill-meta">
+                  <span class="skill-title">JavaScript (ES6+)</span>
+                  <span class="skill-level">Proficient</span>
+                </div>
+                <p class="skill-desc">Asynchronous execution, DOM manipulation, REST consumption, and dynamic single-page interactions.</p>
+              </li>
+              <li class="skill-row">
+                <div class="skill-meta">
+                  <span class="skill-title">HTML5 &amp; CSS3</span>
+                  <span class="skill-level">Semantic &amp; Responsive</span>
+                </div>
+                <p class="skill-desc">Fluid grid layouts, modern Flexbox/Grid, accessible ARIA roles, CSS variables, and bespoke design systems.</p>
+              </li>
+              <li class="skill-row">
+                <div class="skill-meta">
+                  <span class="skill-title">Bootstrap &amp; PHP</span>
+                  <span class="skill-level">Application Development</span>
+                </div>
+                <p class="skill-desc">Rapid interface scaffolding, server-side data processing, and lightweight API endpoints.</p>
+              </li>
+            </ul>
+          </div>
+
+          <!-- Column 3: Data & Infrastructure -->
+          <div class="skill-category-card">
+            <div class="category-header">
+              <span class="category-code">DATA_03</span>
+              <h3 class="category-name">Databases &amp; Systems</h3>
+            </div>
+            <p class="category-summary">Managing relational and document state alongside infrastructure protocols.</p>
+            <ul class="skill-items-list">
+              <li class="skill-row">
+                <div class="skill-meta">
+                  <span class="skill-title">MySQL &amp; Relational DBs</span>
+                  <span class="skill-level">Schema &amp; Queries</span>
+                </div>
+                <p class="skill-desc">Relational schema design, normalization, complex joins, and transactional data integrity.</p>
+              </li>
+              <li class="skill-row">
+                <div class="skill-meta">
+                  <span class="skill-title">MongoDB</span>
+                  <span class="skill-level">Document Store</span>
+                </div>
+                <p class="skill-desc">JSON-based document schemas, flexible object storage, and high-throughput application logging.</p>
+              </li>
+              <li class="skill-row">
+                <div class="skill-meta">
+                  <span class="skill-title">DNS, SSL &amp; Network Routing</span>
+                  <span class="skill-level">Configuration</span>
+                </div>
+                <p class="skill-desc">Domain delegation, CNAME records, HTTPS/SSL certificates, and endpoint routing verification.</p>
+              </li>
+            </ul>
+          </div>
+
+          <!-- Column 4: Embedded & Analytical Tools -->
+          <div class="skill-category-card">
+            <div class="category-header">
+              <span class="category-code">TOOL_04</span>
+              <h3 class="category-name">Hardware &amp; Enterprise Platforms</h3>
+            </div>
+            <p class="category-summary">Cross-disciplinary tooling bridging microcontrollers with corporate analytics.</p>
+            <ul class="skill-items-list">
+              <li class="skill-row">
+                <div class="skill-meta">
+                  <span class="skill-title">Arduino &amp; ESP32</span>
+                  <span class="skill-level">Embedded Prototyping</span>
+                </div>
+                <p class="skill-desc">Firmware flashing, GPIO control, sensor polling, wireless serial communication, and relay driving.</p>
+              </li>
+              <li class="skill-row">
+                <div class="skill-meta">
+                  <span class="skill-title">Tableau &amp; SAP</span>
+                  <span class="skill-level">Data Visualization</span>
+                </div>
+                <p class="skill-desc">Enterprise report syndication, dashboard embedding, metric aggregation, and stakeholder reporting.</p>
+              </li>
+              <li class="skill-row">
+                <div class="skill-meta">
+                  <span class="skill-title">Disciplined Soft Skills</span>
+                  <span class="skill-level">Human Collaboration</span>
+                </div>
+                <p class="skill-desc">Root-cause problem solving, high-accountability time management, agile team communication, and mentorship.</p>
+              </li>
+            </ul>
+          </div>
+        </div>
+
+        <!-- Problem Solving Spotlight -->
+        <div class="problem-solving-banner">
+          <div class="banner-content">
+            <span class="banner-tag">Algorithmic Problem-Solving Discipline</span>
+            <h3 class="banner-title">200+ Problems Solved &amp; LeetCode 100-Day Badge</h3>
+            <p class="banner-desc">
+              Every day for over one hundred uninterrupted days, I dedicated time to tackling competitive coding challenges. This habit sharpened my understanding of graph traversal, dynamic programming, tree traversals, two-pointer arrays, and space-time optimization. It remains the foundation of how I analyze software performance today.
+            </p>
+          </div>
+          <div class="banner-badge-box">
+            <div class="badge-icon-wireframe">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+                <polygon points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2"></polygon>
+              </svg>
+            </div>
+            <span class="badge-caption">100 Days Badge</span>
+            <span class="badge-sub">Daily Consistency Verified</span>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Milestones, Education & Community -->
+    <section class="section milestones-section" id="milestones">
+      <div class="container">
+        <div class="section-header">
+          <span class="section-sub">Timeline &amp; Background</span>
+          <h2 class="section-title">Education &amp; Milestones</h2>
+        </div>
+
+        <div class="timeline-container">
+
+          <!-- Item 1: LPU B.Tech -->
+          <div class="timeline-item">
+            <div class="timeline-meta">
+              <span class="timeline-year">Graduating</span>
+              <span class="timeline-location">Punjab, India</span>
+            </div>
+            <div class="timeline-body">
+              <span class="timeline-type">Higher Education</span>
+              <h3 class="timeline-title">Lovely Professional University (LPU)</h3>
+              <div class="timeline-subtitle">Bachelor of Technology &mdash; Computer Science and Engineering</div>
+              <p class="timeline-text">
+                Comprehensive academic rigor focusing on data structures, algorithms, computer networks, database management systems, operating systems, and distributed computing. Maintained a consistent academic standing with a <strong>CGPA of 7.5</strong>.
+              </p>
+            </div>
+          </div>
+
+          <!-- Item 2: Hackathon Achievement -->
+          <div class="timeline-item">
+            <div class="timeline-meta">
+              <span class="timeline-year">Competition</span>
+              <span class="timeline-location">College Hackathon</span>
+            </div>
+            <div class="timeline-body">
+              <span class="timeline-type">Engineering Achievement</span>
+              <h3 class="timeline-title">Top 10 Finalist / 50+ Competing Teams</h3>
+              <div class="timeline-subtitle">University Web Solution Hackathon Prototype</div>
+              <p class="timeline-text">
+                Formed and led a technical squad to design, build, and pitch an innovative web application prototype under intense sprint deadlines. Competed against more than fifty collegiate engineering squads, successfully earning a top 10 finalist placement through clean architecture and live prototype demonstration.
+              </p>
+            </div>
+          </div>
+
+          <!-- Item 3: Volunteer Tutoring -->
+          <div class="timeline-item">
+            <div class="timeline-meta">
+              <span class="timeline-year">July 2026</span>
+              <span class="timeline-location">Community Initiative</span>
+            </div>
+            <div class="timeline-body">
+              <span class="timeline-type">Social Impact &amp; Mentorship</span>
+              <h3 class="timeline-title">Volunteer Python Tutoring &mdash; NGO Initiative</h3>
+              <div class="timeline-subtitle">Community Code Education</div>
+              <p class="timeline-text">
+                Conducted structured hands-on tutoring sessions in Python fundamentals, logical reasoning, and basic algorithmic thinking for students from underserved communities. Explaining core computer science principles in intuitive, accessible terms deepened my own clarity as an engineer.
+              </p>
+            </div>
+          </div>
+
+          <!-- Item 4: AI & Python Certifications -->
+          <div class="timeline-item">
+            <div class="timeline-meta">
+              <span class="timeline-year">Feb &ndash; Mar 2026</span>
+              <span class="timeline-location">Certified Learning</span>
+            </div>
+            <div class="timeline-body">
+              <span class="timeline-type">Professional Development</span>
+              <h3 class="timeline-title">Certifications: Artificial Intelligence &amp; Python Foundations</h3>
+              <div class="timeline-subtitle">Rigorous Independent Coursework</div>
+              <p class="timeline-text">
+                Earned formal certification in <em>Introduction to Artificial Intelligence</em> (March 2026) covering search strategies, neural concepts, and machine learning primitives, preceded by <em>Introduction to Python</em> (February 2026) confirming advanced OOP and script automation capabilities.
+              </p>
+            </div>
+          </div>
+
+          <!-- Item 5: Intermediate Education -->
+          <div class="timeline-item">
+            <div class="timeline-meta">
+              <span class="timeline-year">2021 &ndash; 2023</span>
+              <span class="timeline-location">Tirupati, AP</span>
+            </div>
+            <div class="timeline-body">
+              <span class="timeline-type">Pre-University Education</span>
+              <h3 class="timeline-title">Bharatiya Vidya Bhavan's</h3>
+              <div class="timeline-subtitle">Intermediate / Higher Secondary &mdash; 84% Aggregate</div>
+              <p class="timeline-text">
+                Rigorous foundations in Mathematics, Physics, and analytical sciences providing the quantitative baseline for engineering computation and algorithmic logic.
+              </p>
+            </div>
+          </div>
+
+          <!-- Item 6: High School Education -->
+          <div class="timeline-item">
+            <div class="timeline-meta">
+              <span class="timeline-year">2020 &ndash; 2021</span>
+              <span class="timeline-location">Andhra Pradesh</span>
+            </div>
+            <div class="timeline-body">
+              <span class="timeline-type">Secondary Schooling</span>
+              <h3 class="timeline-title">Keshava Reddy High School</h3>
+              <div class="timeline-subtitle">Secondary School Certificate &mdash; 87% Aggregate</div>
+              <p class="timeline-text">
+                Graduated with distinction, laying early habits of disciplined study, scientific inquiry, and academic excellence.
+              </p>
+            </div>
+          </div>
+
+        </div>
+      </div>
+    </section>
+
+    <!-- Contact & Collaborative Dialogue -->
+    <section class="section contact-section" id="contact">
+      <div class="container">
+        <div class="contact-card">
+          <div class="contact-header-area">
+            <span class="section-sub">Start a Dialogue</span>
+            <h2 class="contact-title">Let's build something durable together.</h2>
+            <p class="contact-desc">
+              Whether you have an open engineering role, need an engineer who is comfortable writing low-level firmware or scalable web applications, or want to discuss a project, I am readily available.
+            </p>
+          </div>
+
+          <div class="contact-grid">
+            <!-- Left Info Panel -->
+            <div class="contact-info-panel">
+              <div class="contact-method">
+                <span class="method-label">Direct Email</span>
+                <div class="method-interactive">
+                  <a href="mailto:sjohnmathew07@gmail.com" class="method-value">sjohnmathew07@gmail.com</a>
+                  <button class="icon-copy-btn" id="copyEmailContactBtn" data-email="sjohnmathew07@gmail.com" aria-label="Copy email address" title="Copy email">
+                    <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><rect x="9" y="9" width="13" height="13" rx="2" ry="2"></rect><path d="M5 15H4a2 2 0 0 1-2-2V4a2 2 0 0 1 2-2h9a2 2 0 0 1 2 2v1"></path></svg>
+                  </button>
+                </div>
+              </div>
+
+              <div class="contact-method">
+                <span class="method-label">Direct Phone / WhatsApp</span>
+                <div class="method-interactive">
+                  <a href="tel:+918096801927" class="method-value">+91 8096801927</a>
+                </div>
+              </div>
+
+              <div class="contact-method">
+                <span class="method-label">Professional Networks</span>
+                <div class="method-socials">
+                  <a href="https://github.com/sjohnmathew07" target="_blank" rel="noopener noreferrer" class="social-chip">
+                    <span>GitHub Profile</span>
+                    <svg class="mini-arrow" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><line x1="7" y1="17" x2="17" y2="7"></line><polyline points="7 7 17 7 17 17"></polyline></svg>
+                  </a>
+                  <a href="https://www.linkedin.com/in/john-mathew-sudha-0a6616379/" target="_blank" rel="noopener noreferrer" class="social-chip">
+                    <span>LinkedIn Profile</span>
+                    <svg class="mini-arrow" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><line x1="7" y1="17" x2="17" y2="7"></line><polyline points="7 7 17 7 17 17"></polyline></svg>
+                  </a>
+                </div>
+              </div>
+
+              <div class="availability-callout">
+                <div class="avail-indicator"></div>
+                <div>
+                  <strong>Status: Actively Interviewing</strong>
+                  <p>Open for full-time Software Engineering, Backend, Embedded/IoT, and Full-Stack opportunities.</p>
+                </div>
+              </div>
+            </div>
+
+            <!-- Right Form Panel -->
+            <div class="contact-form-panel">
+              <form id="contactForm" class="contact-form" novalidate>
+                <div class="form-group">
+                  <label for="senderName" class="form-label">Your Name or Organization</label>
+                  <input type="text" id="senderName" name="name" class="form-input" placeholder="e.g. Elena Rostova / Acme Corp" required>
+                  <span class="form-error" id="nameError"></span>
+                </div>
+
+                <div class="form-group">
+                  <label for="senderEmail" class="form-label">Your Email Address</label>
+                  <input type="email" id="senderEmail" name="email" class="form-input" placeholder="e.g. elena@acme.com" required>
+                  <span class="form-error" id="emailError"></span>
+                </div>
+
+                <div class="form-group">
+                  <label for="inquiryType" class="form-label">Nature of Inquiry</label>
+                  <select id="inquiryType" name="inquiryType" class="form-select">
+                    <option value="Full-Time Engineering Role">Full-Time Software Engineering Role</option>
+                    <option value="Contract or IoT Project">Contract, Embedded, or IoT Initiative</option>
+                    <option value="Technical Collaboration">Technical Collaboration / Research</option>
+                    <option value="General Conversation">General Conversation</option>
+                  </select>
+                </div>
+
+                <div class="form-group">
+                  <label for="messageBody" class="form-label">Your Message</label>
+                  <textarea id="messageBody" name="message" class="form-textarea" rows="4" placeholder="Share a few details about the position, technical challenges, or collaboration..." required></textarea>
+                  <span class="form-error" id="messageError"></span>
+                </div>
+
+                <button type="submit" class="btn btn-primary btn-block" id="submitBtn">
+                  <span>Send Message Directly</span>
+                  <svg class="btn-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><line x1="22" y1="2" x2="11" y2="13"></line><polygon points="22 2 15 22 11 13 2 9 22 2"></polygon></svg>
+                </button>
+
+                <div class="form-feedback" id="formFeedback" role="alert"></div>
+              </form>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <!-- Toast Notification Overlay -->
+  <div class="toast-container" id="toastContainer" aria-live="polite"></div>
+
+  <!-- Minimalist Editorial Footer -->
+  <footer class="site-footer">
+    <div class="container footer-container">
+      <div class="footer-col-left">
+        <span class="footer-brand">S. John Mathew</span>
+        <p class="footer-tagline">
+          Built with HTML, Vanilla CSS, and JavaScript. Designed strictly in monochrome.
+        </p>
+      </div>
+
+      <div class="footer-col-mid">
+        <div class="footer-links">
+          <a href="#about">About</a>
+          <a href="#work">Work</a>
+          <a href="#capabilities">Capabilities</a>
+          <a href="#milestones">Milestones</a>
+          <a href="#contact">Contact</a>
+        </div>
+      </div>
+
+      <div class="footer-col-right">
+        <p class="footer-copy">&copy; <span id="currentYear">2026</span> S. John Mathew. All rights reserved.</p>
+        <a href="#top" class="back-to-top" aria-label="Return to top of page">
+          <span>Back to Top</span>
+          <svg class="mini-arrow-up" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><line x1="12" y1="19" x2="12" y2="5"></line><polyline points="5 12 12 5 19 12"></polyline></svg>
+        </a>
+      </div>
+    </div>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>
